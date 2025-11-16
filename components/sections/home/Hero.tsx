@@ -188,7 +188,7 @@ export function Hero() {
   const totalSlides = 1 + slides.length;
 
   return (
-    <div className="relative w-full h-full">
+    <div className="relative w-full">
       <Carousel
         className="w-full h-full"
         setApi={setApi}
@@ -200,7 +200,7 @@ export function Hero() {
           }),
         ]}
       >
-        <CarouselContent className="h-screen">
+        <CarouselContent className="h-[768px] md:h-[1024px]">
           {/* Main Hero Slide */}
           <CarouselItem className="h-full p-0">
             <SlideWrapper
@@ -219,7 +219,7 @@ export function Hero() {
                     Aqui o seu projeto também é o nosso sonho!
                   </p>
 
-                  <p className="text-base md:text-lg text-white/90 leading-relaxed drop-shadow-md">
+                  <p className="hidden md:block text-base md:text-lg text-white/90 leading-relaxed drop-shadow-md">
                     <strong>Deixa que nós cuidamos de tudo</strong>, desde o
                     projeto até a entrega final. Enquanto isso, você só se
                     concentra no que realmente <strong>importa</strong>.

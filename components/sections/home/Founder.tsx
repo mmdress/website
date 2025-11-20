@@ -47,7 +47,7 @@ export function Founder() {
               <div className="aspect-4/5 overflow-hidden rounded-2xl">
                 <Image
                   src="/images/home/founder.jpg"
-                  alt="Mariana Medeiros - Fundadora"
+                  alt="Marcia Nadinho - Fundadora"
                   width={800}
                   height={1000}
                   className="h-full w-full object-cover"
@@ -68,7 +68,7 @@ export function Founder() {
             </div>
 
             <h2 className="text-foreground mb-4 text-3xl tracking-tight sm:text-4xl lg:text-5xl">
-              Mariana Medeiros
+              Marcia Nadinho
             </h2>
 
             <div className="text-primary mb-8 text-xl font-semibold tracking-wide uppercase">
@@ -89,7 +89,7 @@ export function Founder() {
             {/* Biography */}
             <div className="text-muted-foreground mb-8 space-y-4 leading-relaxed">
               <p>
-                Formada pela FAU-USP, Mariana fundou a MMDress Arquitetura e
+                Formada pela FAU-USP, Marcia fundou a MMDress Arquitetura e
                 Interiores em 2009, após anos de experiência em renomados
                 escritórios de arquitetura. Sua visão única de unir estética
                 refinada com funcionalidade inteligente se tornou a assinatura

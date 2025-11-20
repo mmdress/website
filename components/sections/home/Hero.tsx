@@ -1,8 +1,8 @@
-"use client";
+'use client';
 
-import { useEffect, useState, useCallback, ReactNode } from "react";
-import Image from "next/image";
-import Link from "next/link";
+import { useEffect, useState, useCallback, ReactNode } from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
 import {
   CheckCircle,
   Clock,
@@ -17,10 +17,10 @@ import {
   Sparkles,
   CircleArrowDown,
   Mouse,
-} from "lucide-react";
-import Autoplay from "embla-carousel-autoplay";
+} from 'lucide-react';
+import Autoplay from 'embla-carousel-autoplay';
 
-import { Button } from "@/components/ui";
+import { Button } from '@/components/ui';
 import {
   Carousel,
   CarouselContent,
@@ -28,8 +28,8 @@ import {
   CarouselNext,
   CarouselPrevious,
   type CarouselApi,
-} from "@/components/ui";
-import { ROUTES } from "@/lib/utils";
+} from '@/components/ui';
+import { ROUTES } from '@/lib/utils';
 
 interface SlideWrapperProps {
   src: string;
@@ -42,18 +42,18 @@ interface SlideWrapperProps {
 function SlideWrapper({
   src,
   alt,
-  overlayOpacity = "bg-black/30",
+  overlayOpacity = 'bg-black/30',
   priority = false,
   children,
 }: SlideWrapperProps) {
   return (
-    <div className="relative w-full h-full">
+    <div className="relative h-full w-full">
       <Image
         src={src}
         alt={alt}
         width={1536}
         height={1024}
-        className="w-full h-full object-cover"
+        className="h-full w-full object-cover"
         priority={priority}
       />
       <div className={`absolute inset-0 ${overlayOpacity}`} />
@@ -65,63 +65,63 @@ function SlideWrapper({
 const slides = [
   {
     id: 1,
-    src: "https://picsum.photos/seed/2/1536/1024",
-    alt: "Slide 2",
-    title: "<span>Arquitetura</span> e Interiores",
-    subtitle: "Design exclusivo para cada espaço",
-    buttonText: "Nossos serviços",
+    src: 'https://picsum.photos/seed/2/1536/1024',
+    alt: 'Slide 2',
+    title: '<span>Arquitetura</span> e Interiores',
+    subtitle: 'Design exclusivo para cada espaço',
+    buttonText: 'Nossos serviços',
     buttonLink: ROUTES.SERVICES,
     benefits: [
       {
         icon: Palette,
-        text: "Projetos arquitetônicos personalizados",
+        text: 'Projetos arquitetônicos personalizados',
       },
       {
         icon: Ruler,
-        text: "Design de interiores completo",
+        text: 'Design de interiores completo',
       },
       {
         icon: Sparkles,
-        text: "Consultoria em decoração e ambientação",
+        text: 'Consultoria em decoração e ambientação',
       },
       {
         icon: Home,
-        text: "Reformas e adequações residenciais",
+        text: 'Reformas e adequações residenciais',
       },
       {
         icon: CheckCircle,
-        text: "Acompanhamento do projeto à execução",
+        text: 'Acompanhamento do projeto à execução',
       },
     ],
   },
   {
     id: 2,
-    src: "https://picsum.photos/seed/3/1536/1024",
-    alt: "Slide 3",
-    title: "Marcenaria <span>Especializada</span>",
-    subtitle: "Móveis sob medida com excelência",
-    buttonText: "Entre em contato",
+    src: 'https://picsum.photos/seed/3/1536/1024',
+    alt: 'Slide 3',
+    title: 'Marcenaria <span>Especializada</span>',
+    subtitle: 'Móveis sob medida com excelência',
+    buttonText: 'Entre em contato',
     buttonLink: ROUTES.CONTACT,
     benefits: [
       {
         icon: Hammer,
-        text: "Móveis planejados sob medida",
+        text: 'Móveis planejados sob medida',
       },
       {
         icon: Box,
-        text: "Armários, estantes e painéis personalizados",
+        text: 'Armários, estantes e painéis personalizados',
       },
       {
         icon: Wrench,
-        text: "Acabamentos de alta qualidade",
+        text: 'Acabamentos de alta qualidade',
       },
       {
         icon: Ruler,
-        text: "Projetos exclusivos para seu espaço",
+        text: 'Projetos exclusivos para seu espaço',
       },
       {
         icon: CheckCircle,
-        text: "Materiais nobres e duráveis",
+        text: 'Materiais nobres e duráveis',
       },
     ],
   },
@@ -130,30 +130,30 @@ const slides = [
 const benefits = [
   {
     icon: Award,
-    text: "Sem atrasos, prazo em contrato",
+    text: 'Sem atrasos, prazo em contrato',
   },
   {
     icon: DollarSign,
-    text: "Orçamento definido desde o início",
+    text: 'Orçamento definido desde o início',
   },
   {
     icon: Clock,
-    text: "Cuidamos de tudo para facilitar sua vida",
+    text: 'Cuidamos de tudo para facilitar sua vida',
   },
   {
     icon: Home,
-    text: "Projetos residenciais e comerciais",
+    text: 'Projetos residenciais e comerciais',
   },
   {
     icon: CheckCircle,
-    text: "Design exclusivo e funcionalidade garantida",
+    text: 'Design exclusivo e funcionalidade garantida',
   },
 ];
 
 const statistics = [
-  { value: "+150", label: "Projetos entregues" },
-  { value: "+25 MIL", label: "M² Projetados" },
-  { value: "+7", label: "Anos de experiência" },
+  { value: '+150', label: 'Projetos entregues' },
+  { value: '+25 MIL', label: 'M² Projetados' },
+  { value: '+7', label: 'Anos de experiência' },
 ];
 
 export function Hero() {
@@ -167,12 +167,12 @@ export function Hero() {
 
     setCurrent(api.selectedScrollSnap() + 1);
 
-    api.on("select", () => {
+    api.on('select', () => {
       setCurrent(api.selectedScrollSnap() + 1);
     });
 
     return () => {
-      api?.off("select", () => {
+      api?.off('select', () => {
         setCurrent(api.selectedScrollSnap() + 1);
       });
     };
@@ -182,7 +182,7 @@ export function Hero() {
     (index: number) => {
       api?.scrollTo(index);
     },
-    [api]
+    [api],
   );
 
   const totalSlides = 1 + slides.length;
@@ -190,7 +190,7 @@ export function Hero() {
   return (
     <div className="relative w-full">
       <Carousel
-        className="w-full h-full"
+        className="h-full w-full"
         setApi={setApi}
         plugins={[
           Autoplay({
@@ -209,17 +209,17 @@ export function Hero() {
               overlayOpacity="bg-black/40"
               priority={true}
             >
-              <div className="absolute inset-0 flex flex-col justify-center px-4 z-10 bg-black/50">
+              <div className="absolute inset-0 z-10 flex flex-col justify-center bg-black/50 px-4">
                 <div className="max-w-2xl space-y-6 px-8 md:px-12 lg:px-16">
-                  <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight drop-shadow-lg">
+                  <h1 className="text-3xl leading-tight font-bold text-white drop-shadow-lg md:text-4xl lg:text-5xl">
                     Bem-vindo à <span className="text-primary">MMDress</span>
                   </h1>
 
-                  <p className="text-xl md:text-2xl font-semibold text-white drop-shadow-md">
+                  <p className="text-xl font-semibold text-white drop-shadow-md md:text-2xl">
                     Aqui o seu projeto também é o nosso sonho!
                   </p>
 
-                  <p className="hidden md:block text-base md:text-lg text-white/90 leading-relaxed drop-shadow-md">
+                  <p className="hidden text-base leading-relaxed text-white/90 drop-shadow-md md:block md:text-lg">
                     <strong>Deixa que nós cuidamos de tudo</strong>, desde o
                     projeto até a entrega final. Enquanto isso, você só se
                     concentra no que realmente <strong>importa</strong>.
@@ -230,8 +230,8 @@ export function Hero() {
                       const Icon = benefit.icon;
                       return (
                         <div key={index} className="flex items-start gap-3">
-                          <Icon className="w-5 h-5 text-primary mt-0.5 shrink-0" />
-                          <p className="text-white text-sm md:text-base drop-shadow-sm">
+                          <Icon className="text-primary mt-0.5 h-5 w-5 shrink-0" />
+                          <p className="text-sm text-white drop-shadow-sm md:text-base">
                             {benefit.text}
                           </p>
                         </div>
@@ -243,24 +243,24 @@ export function Hero() {
                     <Button
                       asChild
                       size="lg"
-                      className="text-base md:text-lg px-8 py-6 bg-primary hover:bg-primary/90"
+                      className="bg-primary hover:bg-primary/90 px-8 py-6 text-base md:text-lg"
                     >
                       <Link
                         href={ROUTES.SERVICES}
-                        className="text-white font-semibold"
+                        className="font-semibold text-white"
                       >
                         Solicitar orçamento
                       </Link>
                     </Button>
                   </div>
 
-                  <div className="flex flex-wrap gap-2 sm:gap-4 md:gap-8 pt-8 border-t">
+                  <div className="flex flex-wrap gap-2 border-t pt-8 sm:gap-4 md:gap-8">
                     {statistics.map((stat, index) => (
-                      <div key={index} className="flex-1 min-w-24">
-                        <p className="text-2xl md:text-3xl font-bold text-primary drop-shadow-lg">
+                      <div key={index} className="min-w-24 flex-1">
+                        <p className="text-primary text-2xl font-bold drop-shadow-lg md:text-3xl">
                           {stat.value}
                         </p>
-                        <p className="text-xs md:text-base text-white/80 drop-shadow-sm">
+                        <p className="text-xs text-white/80 drop-shadow-sm md:text-base">
                           {stat.label}
                         </p>
                       </div>
@@ -279,13 +279,13 @@ export function Hero() {
                 alt={slide.alt}
                 priority={slide.id === 1}
               >
-                <div className="absolute inset-0 flex flex-col justify-center px-4 z-10">
+                <div className="absolute inset-0 z-10 flex flex-col justify-center px-4">
                   <div className="max-w-3xl space-y-6 px-8 md:px-12 lg:px-16">
                     <h1
-                      className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight drop-shadow-lg [&>span]:text-primary"
+                      className="[&>span]:text-primary text-3xl leading-tight font-bold text-white drop-shadow-lg md:text-4xl lg:text-5xl"
                       dangerouslySetInnerHTML={{ __html: slide.title }}
                     />
-                    <p className="text-xl md:text-2xl font-semibold text-white drop-shadow-md">
+                    <p className="text-xl font-semibold text-white drop-shadow-md md:text-2xl">
                       {slide.subtitle}
                     </p>
 
@@ -295,8 +295,8 @@ export function Hero() {
                           const Icon = benefit.icon;
                           return (
                             <div key={index} className="flex items-start gap-3">
-                              <Icon className="w-5 h-5 text-primary mt-0.5 shrink-0" />
-                              <p className="text-white text-sm md:text-base drop-shadow-sm">
+                              <Icon className="text-primary mt-0.5 h-5 w-5 shrink-0" />
+                              <p className="text-sm text-white drop-shadow-sm md:text-base">
                                 {benefit.text}
                               </p>
                             </div>
@@ -309,11 +309,11 @@ export function Hero() {
                       <Button
                         asChild
                         size="lg"
-                        className="text-base md:text-lg px-8 py-6 bg-primary hover:bg-primary/90"
+                        className="bg-primary hover:bg-primary/90 px-8 py-6 text-base md:text-lg"
                       >
                         <Link
                           href={slide.buttonLink}
-                          className="text-white font-semibold"
+                          className="font-semibold text-white"
                         >
                           {slide.buttonText}
                         </Link>
@@ -325,20 +325,20 @@ export function Hero() {
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious className="hidden md:flex left-4 bg-white/10 text-white hover:bg-white/20" />
-        <CarouselNext className="hidden md:flex right-4 bg-white/10 text-white hover:bg-white/20" />
+        <CarouselPrevious className="left-4 hidden bg-white/10 text-white hover:bg-white/20 md:flex" />
+        <CarouselNext className="right-4 hidden bg-white/10 text-white hover:bg-white/20 md:flex" />
       </Carousel>
 
       {/* Dots Navigation */}
-      <div className="absolute bottom-20 left-1/2 -translate-x-1/2 z-20 flex gap-2">
+      <div className="absolute bottom-20 left-1/2 z-20 flex -translate-x-1/2 gap-2">
         {Array.from({ length: totalSlides }).map((_, index) => (
           <button
             key={index}
             onClick={() => scrollTo(index)}
             className={`h-2 rounded-full transition-all duration-300 ${
               current === index + 1
-                ? "w-8 bg-primary"
-                : "w-2 bg-white/50 hover:bg-white/70"
+                ? 'bg-primary w-8'
+                : 'w-2 bg-white/50 hover:bg-white/70'
             }`}
             aria-label={`Go to slide ${index + 1}`}
           />
@@ -346,9 +346,9 @@ export function Hero() {
       </div>
 
       {/* Scroll Down Indicator */}
-      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-20 animate-bounce">
-        <Mouse className="md:block hidden w-6 h-6 text-white/80 drop-shadow-lg" />
-        <CircleArrowDown className="block md:hidden w-6 h-6 text-white/80 drop-shadow-lg" />
+      <div className="absolute bottom-6 left-1/2 z-20 -translate-x-1/2 animate-bounce">
+        <Mouse className="hidden h-6 w-6 text-white/80 drop-shadow-lg md:block" />
+        <CircleArrowDown className="block h-6 w-6 text-white/80 drop-shadow-lg md:hidden" />
       </div>
     </div>
   );

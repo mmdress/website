@@ -1,36 +1,36 @@
-"use client";
+'use client';
 
-import { useState, useEffect, Fragment } from "react";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
-import Image from "next/image";
-import { Menu, X, Instagram, Facebook } from "lucide-react";
+import { useState, useEffect, Fragment } from 'react';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+import Image from 'next/image';
+import { Menu, X, Instagram, Facebook } from 'lucide-react';
 
-import { ROUTES } from "@/lib/utils";
-import { Button, Separator } from "@/components/ui";
+import { ROUTES } from '@/lib/utils';
+import { Button, Separator } from '@/components/ui';
 
 // Navigation items configuration
 const NAV_ITEMS = [
-  { href: ROUTES.HOME, label: "Início" },
-  { href: ROUTES.ABOUT, label: "Sobre" },
-  { href: ROUTES.SERVICES, label: "Serviços" },
-  { href: ROUTES.PROJECTS, label: "Projetos" },
-  { href: ROUTES.TEAM, label: "Equipe" },
-  { href: ROUTES.HOW_IT_WORKS, label: "Como Funciona" },
-  { href: ROUTES.CONTACT, label: "Contato" },
+  { href: ROUTES.HOME, label: 'Início' },
+  { href: ROUTES.ABOUT, label: 'Sobre' },
+  { href: ROUTES.SERVICES, label: 'Serviços' },
+  { href: ROUTES.PROJECTS, label: 'Projetos' },
+  { href: ROUTES.TEAM, label: 'Equipe' },
+  { href: ROUTES.HOW_IT_WORKS, label: 'Como Funciona' },
+  { href: ROUTES.CONTACT, label: 'Contato' },
 ] as const;
 
 // Social media links configuration
 const SOCIAL_LINKS = [
   {
-    href: "https://www.instagram.com/mmdress.arquitetura/",
+    href: 'https://www.instagram.com/mmdress.arquitetura/',
     icon: Instagram,
-    label: "Instagram",
+    label: 'Instagram',
   },
   {
-    href: "https://www.facebook.com/mmdress.arquitetura",
+    href: 'https://www.facebook.com/mmdress.arquitetura',
     icon: Facebook,
-    label: "Facebook",
+    label: 'Facebook',
   },
 ] as const;
 
@@ -46,27 +46,27 @@ export function Header() {
       setIsScrolled(window.scrollY > 20);
     };
 
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener('scroll', handleScroll);
 
-    return () => window.removeEventListener("scroll", handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   // Determine background style
   const getNavBackground = () => {
     if (!isHomePage || isMobileMenuOpen) {
-      return "bg-white/95 backdrop-blur-md shadow-sm";
+      return 'bg-white/95 backdrop-blur-md shadow-sm';
     }
     return isScrolled
-      ? "bg-white/95 backdrop-blur-md shadow-sm"
-      : "bg-transparent";
+      ? 'bg-white/95 backdrop-blur-md shadow-sm'
+      : 'bg-transparent';
   };
 
   // Determine text color
   const getTextColor = () => {
     if (!isHomePage || isMobileMenuOpen) {
-      return "text-foreground";
+      return 'text-foreground';
     }
-    return isScrolled ? "text-foreground" : "text-white";
+    return isScrolled ? 'text-foreground' : 'text-white';
   };
 
   const textColor = getTextColor();
@@ -76,10 +76,10 @@ export function Header() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 rounded-b-md ${getNavBackground()}`}
+      className={`fixed top-0 right-0 left-0 z-50 rounded-b-md transition-all duration-300 ${getNavBackground()}`}
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20 lg:h-24 gap-4">
+        <div className="flex h-20 items-center justify-between gap-4 lg:h-24">
           {/* Logo */}
           <div className="shrink-0">
             <Link href={ROUTES.HOME} className="group flex items-center gap-3">
@@ -88,19 +88,19 @@ export function Header() {
                 alt="MMDress Logo"
                 width={48}
                 height={48}
-                className="w-10 h-10 lg:w-12 lg:h-12 transition-colors"
+                className="h-10 w-10 transition-colors lg:h-12 lg:w-12"
               />
-              <div className="flex md:hidden xl:flex flex-col items-start">
-                <span className="text-xl lg:text-2xl tracking-wider text-primary group-hover:text-primary/60 transition-colors">
+              <div className="flex flex-col items-start md:hidden xl:flex">
+                <span className="text-primary group-hover:text-primary/60 text-xl tracking-wider transition-colors lg:text-2xl">
                   MMDRESS
                 </span>
                 <span
                   className={`text-xs tracking-widest uppercase ${
                     !isHomePage || isMobileMenuOpen
-                      ? "text-muted-foreground"
+                      ? 'text-muted-foreground'
                       : isScrolled
-                      ? "text-muted-foreground"
-                      : "text-white/80"
+                        ? 'text-muted-foreground'
+                        : 'text-white/80'
                   }`}
                 >
                   Arquitetura & Interiores
@@ -110,7 +110,7 @@ export function Header() {
           </div>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex items-center gap-8 py-9 h-full">
+          <div className="hidden h-full items-center gap-8 py-9 md:flex">
             {NAV_ITEMS.filter((item) => item.href !== ROUTES.HOME).map(
               (item) => {
                 const isActive = isActiveRoute(item.href);
@@ -119,25 +119,25 @@ export function Header() {
                   <Link
                     key={item.href}
                     href={item.href}
-                    className={`text-sm font-semibold tracking-wide hover:text-primary transition-colors uppercase text-nowrap ${
-                      isActive ? "text-primary" : textColor
+                    className={`hover:text-primary text-sm font-semibold tracking-wide text-nowrap uppercase transition-colors ${
+                      isActive ? 'text-primary' : textColor
                     }`}
                   >
                     {item.label}
                   </Link>
                 );
-              }
+              },
             )}
 
             <Separator
               orientation="vertical"
-              className={`hidden lg:block w-2 h-full ${
-                isScrolled ? "bg-foreground" : "bg-border"
+              className={`hidden h-full w-2 lg:block ${
+                isScrolled ? 'bg-foreground' : 'bg-border'
               }`}
             />
 
             {/* Social Media Links */}
-            <div className="hidden lg:flex items-center gap-4 ml-4">
+            <div className="ml-4 hidden items-center gap-4 lg:flex">
               {SOCIAL_LINKS.map((social) => {
                 const Icon = social.icon;
 
@@ -147,10 +147,10 @@ export function Header() {
                     href={social.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className={`transition-colors hover:text-accent ${textColor}`}
+                    className={`hover:text-accent transition-colors ${textColor}`}
                     aria-label={social.label}
                   >
-                    <Icon className="w-5 h-5 hover:text-primary transition-colors" />
+                    <Icon className="hover:text-primary h-5 w-5 transition-colors" />
                   </a>
                 );
               })}
@@ -159,13 +159,13 @@ export function Header() {
 
           {/* Mobile Menu Button */}
           <Button
-            className="md:hidden p-2"
+            className="p-2 md:hidden"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             {isMobileMenuOpen ? (
-              <X className={`w-6 h-6 text-white`} />
+              <X className={'h-6 w-6 text-white'} />
             ) : (
-              <Menu className={`w-6 h-6 text-white`} />
+              <Menu className={'h-6 w-6 text-white'} />
             )}
           </Button>
         </div>
@@ -173,8 +173,8 @@ export function Header() {
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="md:hidden bg-white/95 backdrop-blur-md shadow-sm border-t border-border rounded-b-md">
-          <div className="container mx-auto px-4 py-6 flex flex-col gap-4 rounded-b-md">
+        <div className="border-border rounded-b-md border-t bg-white/95 shadow-sm backdrop-blur-md md:hidden">
+          <div className="container mx-auto flex flex-col gap-4 rounded-b-md px-4 py-6">
             {NAV_ITEMS.map((item) => {
               const isActive = isActiveRoute(item.href);
               return (
@@ -182,19 +182,18 @@ export function Header() {
                   key={item.href}
                   href={item.href}
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className={`text-left py-2 transition-colors uppercase tracking-wide font-semibold focus:outline-none rounded-md ${
+                  className={`rounded-md py-2 text-left font-semibold tracking-wide uppercase transition-colors focus:outline-none ${
                     isActive
-                      ? "text-primary"
-                      : "text-foreground hover:text-primary"
-                  }
-                  `}
+                      ? 'text-primary'
+                      : 'text-foreground hover:text-primary'
+                  } `}
                 >
                   {item.label}
                 </Link>
               );
             })}
           </div>
-          <div className="flex lg:hidden items-center gap-4 p-4 border-t border-border h-16">
+          <div className="border-border flex h-16 items-center gap-4 border-t p-4 lg:hidden">
             {SOCIAL_LINKS.map((social, index) => {
               const Icon = social.icon;
 
@@ -204,14 +203,16 @@ export function Header() {
                     href={social.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className={`flex h-full items-center justify-center w-full transition-colors hover:text-accent ${textColor}`}
+                    className={`hover:text-accent flex h-full w-full items-center justify-center transition-colors ${textColor}`}
                     aria-label={social.label}
                   >
                     <span className="sr-only">{social.label}</span>
-                    <Icon className="w-5 h-5 hover:text-primary transition-colors" />
+                    <Icon className="hover:text-primary h-5 w-5 transition-colors" />
                   </a>
 
-                  {index < SOCIAL_LINKS.length - 1 && <Separator orientation="vertical" className="bg-border"/>}
+                  {index < SOCIAL_LINKS.length - 1 && (
+                    <Separator orientation="vertical" className="bg-border" />
+                  )}
                 </Fragment>
               );
             })}

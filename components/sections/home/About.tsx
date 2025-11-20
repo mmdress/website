@@ -41,10 +41,10 @@ const STATS: Stat[] = [
 ] as const;
 
 const ABOUT_IMAGE = {
-  src: 'https://images.unsplash.com/photo-1581784878214-8d5596b98a01?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBpbnRlcmlvciUyMGRlc2lnbnxlbnwxfHx8fDE3NjA4MDU2NDJ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+  src: '/images/home/about.jpg',
   alt: 'Luxury Interior Design',
-  width: 1080,
-  height: 1350,
+  width: 1536,
+  height: 1024,
 } as const;
 
 const ANIMATION_CONFIG = {

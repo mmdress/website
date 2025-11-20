@@ -52,7 +52,6 @@ export function ContactForm({ theme = 'dark' }: ContactFormProps) {
     try {
       // TODO: Implement form submission logic (API call, etc.)
       console.log('Form data:', data);
-      // You can add your submission logic here
     } catch (error) {
       console.error('Error submitting form:', error);
     }
@@ -64,12 +63,11 @@ export function ContactForm({ theme = 'dark' }: ContactFormProps) {
         <CardTitle className="text-xl">Envie uma mensagem</CardTitle>
       </CardHeader>
       <CardContent>
-        {/* WhatsApp Quote Button */}
         <a
           href={`${CONTACT_DATA.whatsapp.url}?text=Olá! Gostaria de solicitar um orçamento para meu projeto.`}
           target="_blank"
           rel="noopener noreferrer"
-          className="group mb-8 flex w-full items-center justify-center gap-3 rounded-full bg-[#25D366] px-6 py-4 font-bold tracking-wide text-white uppercase transition-all duration-300 hover:bg-[#20BA5A]"
+          className="group mb-8 flex w-full items-center justify-center gap-3 rounded-full bg-[#25D366] px-6 py-4 text-xs font-bold tracking-wide text-white uppercase transition-all duration-300 hover:bg-[#20BA5A] lg:text-base"
         >
           <MessageCircle className="h-5 w-5 transition-transform group-hover:scale-110" />
           Solicitar Orçamento via WhatsApp

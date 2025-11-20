@@ -65,7 +65,7 @@ function SlideWrapper({
 const slides = [
   {
     id: 1,
-    src: 'https://picsum.photos/seed/2/1536/1024',
+    src: 'https://images.unsplash.com/photo-1668026694348-b73c5eb5e299?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxraXRjaGVuJTIwY2FiaW5ldCUyMGludGVyaW9yJTIwZGVzaWdufGVufDF8fHx8MTc2MDgxNDQyOXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
     alt: 'Slide 2',
     title: '<span>Arquitetura</span> e Interiores',
     subtitle: 'Design exclusivo para cada espaço',
@@ -96,7 +96,7 @@ const slides = [
   },
   {
     id: 2,
-    src: 'https://picsum.photos/seed/3/1536/1024',
+    src: 'https://images.unsplash.com/photo-1760072513376-67a46aab0fd1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlbGVnYW50JTIwYmVkcm9vbSUyMGludGVyaW9yJTIwZGVzaWdufGVufDF8fHx8MTc2MDgxNDMzMnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
     alt: 'Slide 3',
     title: 'Marcenaria <span>Especializada</span>',
     subtitle: 'Móveis sob medida com excelência',
@@ -204,7 +204,7 @@ export function Hero() {
           {/* Main Hero Slide */}
           <CarouselItem className="h-full p-0">
             <SlideWrapper
-              src="https://picsum.photos/seed/1/1536/1024"
+              src="https://images.unsplash.com/photo-1679862342541-e408d4f3ab80?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBsaXZpbmclMjByb29tJTIwaW50ZXJpb3J8ZW58MXx8fHwxNzYwNzU4MDc4fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
               alt="Design de interiores moderno"
               overlayOpacity="bg-black/40"
               priority={true}

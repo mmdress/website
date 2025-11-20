@@ -6,6 +6,7 @@ import {
   Portfolio,
   Services,
   Testimonials,
+  Contact,
 } from '@/components/sections/home';
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
       <Differentials />
       <Founder />
       <Testimonials />
+      <Contact />
     </div>
   );
 }

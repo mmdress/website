@@ -63,4 +63,3 @@ export function ProjectCard({ project, index, isInView }: ProjectCardProps) {
     </motion.div>
   );
 }
-

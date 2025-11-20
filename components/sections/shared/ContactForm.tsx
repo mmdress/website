@@ -18,13 +18,14 @@ import {
   CardTitle,
   CardHeader,
 } from '@/components/ui';
-import { FormField } from './FormField';
+import { FormField } from '@/shared-components';
 import { cn } from '@/utils/functions';
 import {
   contactFormSchema,
   type ContactFormData,
   SUBJECT_OPTIONS,
 } from '@/utils/schemas';
+import { CONTACT_DATA } from '@/utils/constants';
 
 interface ContactFormProps {
   theme?: 'light' | 'dark';
@@ -65,7 +66,7 @@ export function ContactForm({ theme = 'dark' }: ContactFormProps) {
       <CardContent>
         {/* WhatsApp Quote Button */}
         <a
-          href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER}?text=Olá! Gostaria de solicitar um orçamento para meu projeto.`}
+          href={`${CONTACT_DATA.whatsapp.url}?text=Olá! Gostaria de solicitar um orçamento para meu projeto.`}
           target="_blank"
           rel="noopener noreferrer"
           className="group mb-8 flex w-full items-center justify-center gap-3 rounded-full bg-[#25D366] px-6 py-4 font-bold tracking-wide text-white uppercase transition-all duration-300 hover:bg-[#20BA5A]"
@@ -178,7 +179,7 @@ export function ContactForm({ theme = 'dark' }: ContactFormProps) {
           <Button
             type="submit"
             disabled={isSubmitting}
-            className="bg-primary hover:bg-primary/90 w-full rounded-full py-6 font-bold tracking-wide text-white uppercase"
+            className="bg-primary hover:bg-primary/90 w-full cursor-pointer rounded-full py-6 font-bold tracking-wide text-white uppercase"
           >
             {isSubmitting ? 'Enviando...' : 'Enviar Mensagem'}
           </Button>

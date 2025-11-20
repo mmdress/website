@@ -1,4 +1,4 @@
-import { Header } from '@/components/layout';
+import { Footer, Header } from '@/components/layout';
 
 interface ISiteLayoutProps {
   children: React.ReactNode;
@@ -6,10 +6,10 @@ interface ISiteLayoutProps {
 
 export default function SiteLayout({ children }: ISiteLayoutProps) {
   return (
-    /* Remove the h-[200vh] when the page is ready */
-    <div className="flex h-[200vh] min-h-screen flex-col">
+    <div className="flex min-h-screen flex-col">
       <Header />
       {children}
+      <Footer />
     </div>
   );
 }

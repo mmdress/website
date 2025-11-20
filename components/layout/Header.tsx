@@ -4,35 +4,11 @@ import { useState, useEffect, Fragment } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import Image from 'next/image';
-import { Menu, X, Instagram, Facebook } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 
 import { ROUTES } from '@/utils/routes';
+import { NAV_ITEMS, SOCIAL_LINKS } from '@/utils/constants';
 import { Button, Separator } from '@/components/ui';
-
-// Navigation items configuration
-const NAV_ITEMS = [
-  { href: ROUTES.HOME, label: 'Início' },
-  { href: ROUTES.ABOUT, label: 'Sobre' },
-  { href: ROUTES.SERVICES, label: 'Serviços' },
-  { href: ROUTES.PROJECTS, label: 'Projetos' },
-  { href: ROUTES.TEAM, label: 'Equipe' },
-  { href: ROUTES.HOW_IT_WORKS, label: 'Como Funciona' },
-  { href: ROUTES.CONTACT, label: 'Contato' },
-] as const;
-
-// Social media links configuration
-const SOCIAL_LINKS = [
-  {
-    href: 'https://www.instagram.com/mmdress.arquitetura/',
-    icon: Instagram,
-    label: 'Instagram',
-  },
-  {
-    href: 'https://www.facebook.com/mmdress.arquitetura',
-    icon: Facebook,
-    label: 'Facebook',
-  },
-] as const;
 
 export function Header() {
   const [isScrolled, setIsScrolled] = useState(false);

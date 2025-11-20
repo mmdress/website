@@ -1,3 +1,6 @@
+import { Facebook, Instagram } from 'lucide-react';
+import { ROUTES } from './routes';
+
 export const CONTACT_DATA = {
   email: 'contato@mmdress.com.br',
   whatsapp: {
@@ -22,3 +25,26 @@ export const CONTACT_DATA = {
     zipCode: '04263-200',
   }
 };
+
+export const NAV_ITEMS = [
+  { href: ROUTES.HOME, label: 'Início' },
+  { href: ROUTES.ABOUT, label: 'Sobre' },
+  { href: ROUTES.SERVICES, label: 'Serviços' },
+  { href: ROUTES.PROJECTS, label: 'Projetos' },
+  { href: ROUTES.TEAM, label: 'Equipe' },
+  { href: ROUTES.HOW_IT_WORKS, label: 'Como Funciona' },
+  { href: ROUTES.CONTACT, label: 'Contato' },
+] as const;
+
+export const SOCIAL_LINKS = [
+  {
+    href: 'https://www.instagram.com/mmdress.arquitetura/',
+    icon: Instagram,
+    label: 'Instagram',
+  },
+  {
+    href: 'https://www.facebook.com/mmdress.arquitetura',
+    icon: Facebook,
+    label: 'Facebook',
+  },
+] as const;

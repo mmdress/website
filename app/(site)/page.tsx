@@ -11,7 +11,7 @@ import {
 
 export default function Home() {
   return (
-    <div className="relative h-[200vh] w-screen">
+    <div className="relative w-screen">
       <Hero />
       <About />
       <Services />

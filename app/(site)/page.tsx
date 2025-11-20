@@ -1,4 +1,11 @@
-import { About, Differentials, Hero, Portfolio, Services } from '@/components/sections/home';
+import {
+  About,
+  Differentials,
+  Founder,
+  Hero,
+  Portfolio,
+  Services,
+} from '@/components/sections/home';
 
 export default function Home() {
   return (
@@ -8,6 +15,7 @@ export default function Home() {
       <Services />
       <Portfolio />
       <Differentials />
+      <Founder />
     </div>
   );
 }

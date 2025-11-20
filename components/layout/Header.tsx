@@ -22,12 +22,13 @@ export function Header() {
       setIsScrolled(window.scrollY > 20);
     };
 
+    handleScroll();
+
     window.addEventListener('scroll', handleScroll);
 
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Determine background style
   const getNavBackground = () => {
     if (!isHomePage || isMobileMenuOpen) {
       return 'bg-white/95 backdrop-blur-md shadow-sm';
@@ -37,7 +38,6 @@ export function Header() {
       : 'bg-transparent';
   };
 
-  // Determine text color
   const getTextColor = () => {
     if (!isHomePage || isMobileMenuOpen) {
       return 'text-foreground';
@@ -47,7 +47,6 @@ export function Header() {
 
   const textColor = getTextColor();
 
-  // Helper function to check if a route is active
   const isActiveRoute = (href: string) => pathname === href;
 
   return (
@@ -56,7 +55,6 @@ export function Header() {
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex h-20 items-center justify-between gap-4 lg:h-24">
-          {/* Logo */}
           <div className="shrink-0">
             <Link href={ROUTES.HOME} className="group flex items-center gap-3">
               <Image
@@ -85,7 +83,6 @@ export function Header() {
             </Link>
           </div>
 
-          {/* Desktop Menu */}
           <div className="hidden h-full items-center gap-8 py-9 md:flex">
             {NAV_ITEMS.filter((item) => item.href !== ROUTES.HOME).map(
               (item) => {
@@ -112,7 +109,6 @@ export function Header() {
               }`}
             />
 
-            {/* Social Media Links */}
             <div className="ml-4 hidden items-center gap-4 lg:flex">
               {SOCIAL_LINKS.map((social) => {
                 const Icon = social.icon;
@@ -133,7 +129,6 @@ export function Header() {
             </div>
           </div>
 
-          {/* Mobile Menu Button */}
           <Button
             className="p-2 md:hidden"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -147,7 +142,6 @@ export function Header() {
         </div>
       </div>
 
-      {/* Mobile Menu */}
       {isMobileMenuOpen && (
         <div className="border-border rounded-b-md border-t bg-white/95 shadow-sm backdrop-blur-md md:hidden">
           <div className="container mx-auto flex flex-col gap-4 rounded-b-md px-4 py-6">

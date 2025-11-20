@@ -5,6 +5,7 @@ import {
   Hero,
   Portfolio,
   Services,
+  Testimonials,
 } from '@/components/sections/home';
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
       <Portfolio />
       <Differentials />
       <Founder />
+      <Testimonials />
     </div>
   );
 }

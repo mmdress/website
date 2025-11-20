@@ -4,3 +4,4 @@ export * from './Services';
 export * from './Portfolio';
 export * from './Differentials';
 export * from './Founder';
+export * from './Testimonials';

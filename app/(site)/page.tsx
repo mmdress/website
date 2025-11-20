@@ -1,4 +1,4 @@
-import { About, Hero, Services } from '@/components/sections/home';
+import { About, Hero, Portfolio, Services } from '@/components/sections/home';
 
 export default function Home() {
   return (
@@ -6,6 +6,7 @@ export default function Home() {
       <Hero />
       <About />
       <Services />
+      <Portfolio />
     </div>
   );
 }

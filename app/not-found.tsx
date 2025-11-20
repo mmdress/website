@@ -1,8 +1,8 @@
-import Link from "next/link";
-import { ArrowLeftIcon } from "lucide-react";
+import Link from 'next/link';
+import { ArrowLeftIcon } from 'lucide-react';
 
-import { Button } from "@/components/ui";
-import { ROUTES } from "@/lib/utils";
+import { Button } from '@/components/ui';
+import { ROUTES } from '@/lib/utils';
 
 export default function NotFound() {
   return (

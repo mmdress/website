@@ -2,7 +2,8 @@
 
 import Image from 'next/image';
 import { motion, type Variants } from 'motion/react';
-import { ProjectCategory, PROJECT_CATEGORY_LABELS } from '@/utils';
+
+import { ProjectCategory, PROJECT_CATEGORY_LABELS } from '@/utils/enums';
 
 export interface Project {
   id: number;

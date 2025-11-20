@@ -7,7 +7,9 @@ import {
   AnimatePresence,
   type Variants,
 } from 'motion/react';
-import { ProjectCategory } from '@/utils';
+
+import { ProjectCategory } from '@/utils/enums';
+
 import { ProjectCard, type Project } from './ProjectCard';
 import { FilterButton } from './FilterButton';
 

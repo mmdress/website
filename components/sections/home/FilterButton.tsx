@@ -1,7 +1,8 @@
 'use client';
 
 import { motion } from 'motion/react';
-import { ProjectCategory, PROJECT_CATEGORY_LABELS } from '@/utils';
+
+import { ProjectCategory, PROJECT_CATEGORY_LABELS } from '@/utils/enums';
 
 interface FilterButtonProps {
   category: ProjectCategory;

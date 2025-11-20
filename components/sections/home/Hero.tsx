@@ -29,7 +29,7 @@ import {
   CarouselPrevious,
   type CarouselApi,
 } from '@/components/ui';
-import { ROUTES } from '@/utils';
+import { ROUTES } from '@/utils/routes';
 
 interface SlideWrapperProps {
   src: string;

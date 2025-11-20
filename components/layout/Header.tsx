@@ -6,7 +6,7 @@ import { usePathname } from 'next/navigation';
 import Image from 'next/image';
 import { Menu, X, Instagram, Facebook } from 'lucide-react';
 
-import { ROUTES } from '@/utils';
+import { ROUTES } from '@/utils/routes';
 import { Button, Separator } from '@/components/ui';
 
 // Navigation items configuration

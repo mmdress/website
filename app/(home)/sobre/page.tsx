@@ -1,5 +1,10 @@
 import { PageHeader } from '@/components/layout';
-import { History } from '@/components/sections/about';
+import {
+  History,
+  Values,
+  MissionVision,
+  Stats,
+} from '@/components/sections/about';
 
 export default function Sobre() {
   return (
@@ -19,6 +24,9 @@ export default function Sobre() {
         }}
       />
       <History />
+      <Values />
+      <MissionVision />
+      <Stats />
     </div>
   );
 }

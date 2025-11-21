@@ -49,7 +49,6 @@ export function ProjectCard({ project, index, isInView }: ProjectCardProps) {
           height={750}
           className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
         />
-        {/* Overlay */}
         <div className="absolute inset-0 flex items-end bg-linear-to-t from-black/80 via-black/40 to-transparent p-6 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
           <div className="text-white">
             <div className="text-primary mb-2 text-xs tracking-widest uppercase">

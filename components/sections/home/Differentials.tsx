@@ -97,10 +97,9 @@ export function Differentials() {
   const isInView = useInView(ref, ANIMATION_CONFIG.viewport);
 
   return (
-    <section className="bg-muted py-20 lg:py-32" ref={ref}>
+    <section id="differentials" className="bg-muted py-20 lg:py-32" ref={ref}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-7xl">
-          {/* Header */}
           <motion.div
             variants={fadeInUp}
             initial="hidden"
@@ -116,7 +115,6 @@ export function Differentials() {
             </h2>
           </motion.div>
 
-          {/* Grid */}
           <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4 lg:gap-10">
             {DIFFERENTIALS.map((differential, index) => {
               const Icon = differential.icon;
@@ -133,7 +131,6 @@ export function Differentials() {
                   whileHover={{ y: -10 }}
                   className="group rounded-2xl bg-white p-8 transition-all duration-300 hover:shadow-lg"
                 >
-                  {/* Icon */}
                   <div className="mb-6">
                     <motion.div
                       variants={iconHover}
@@ -145,7 +142,6 @@ export function Differentials() {
                     </motion.div>
                   </div>
 
-                  {/* Content */}
                   <h3 className="text-foreground mb-3 text-xl font-semibold tracking-tight">
                     {differential.title}
                   </h3>

@@ -86,7 +86,7 @@ export function About() {
   const isInView = useInView(ref, ANIMATION_CONFIG.viewport);
 
   return (
-    <section id="sobre" className="bg-white py-20 lg:py-32" ref={ref}>
+    <section id="about" className="bg-white py-20 lg:py-32" ref={ref}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
           {/* Image */}

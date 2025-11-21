@@ -55,11 +55,15 @@ const TESTIMONIALS: Testimonial[] = [
 
 export function Testimonials() {
   return (
-    <section className="bg-muted py-20 lg:py-32">
+    <section id="testimonials" className="bg-muted py-20 lg:py-32">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-6xl">
-          {/* Header */}
           <div className="mb-16 lg:mb-20">
+            <div className="mb-6">
+              <span className="text-primary text-sm tracking-widest uppercase">
+                Depoimentos
+              </span>
+            </div>
             <h2 className="text-foreground mb-6 text-3xl tracking-tight sm:text-4xl lg:text-5xl">
               Experiências que Inspiram
             </h2>
@@ -69,7 +73,6 @@ export function Testimonials() {
             </p>
           </div>
 
-          {/* Testimonials Carousel */}
           <Carousel
             opts={{
               align: 'start',
@@ -88,7 +91,6 @@ export function Testimonials() {
               ))}
             </CarouselContent>
 
-            {/* Navigation */}
             <div className="mt-8 flex justify-end gap-2">
               <CarouselPrevious className="static translate-y-0" />
               <CarouselNext className="static translate-y-0" />

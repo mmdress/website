@@ -83,9 +83,8 @@ export function Services() {
   const isInView = useInView(ref, ANIMATION_CONFIG.viewport);
 
   return (
-    <section id="servicos" className="bg-muted py-20 lg:py-32" ref={ref}>
+    <section id="services" className="bg-muted py-20 lg:py-32" ref={ref}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Header */}
         <motion.div
           variants={fadeInUp}
           initial="hidden"
@@ -109,7 +108,6 @@ export function Services() {
           </p>
         </motion.div>
 
-        {/* Services Grid */}
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {SERVICES.map((service, index) => {
             const Icon = service.icon;

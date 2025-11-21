@@ -89,7 +89,6 @@ export function About() {
     <section id="about" className="bg-white py-20 lg:py-32" ref={ref}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
-          {/* Image */}
           <motion.div
             variants={slideInFromLeft}
             initial="hidden"
@@ -97,7 +96,7 @@ export function About() {
             transition={ANIMATION_CONFIG.transitions.slideIn}
             className="relative order-2 lg:order-1"
           >
-            <div className="aspect-4/5 overflow-hidden rounded-2xl">
+            <div className="relative z-10 aspect-4/5 overflow-hidden rounded-2xl">
               <motion.div
                 whileHover={{ scale: 1.05 }}
                 transition={{ duration: 0.4 }}
@@ -112,17 +111,15 @@ export function About() {
                 />
               </motion.div>
             </div>
-            {/* Decorative Element */}
             <motion.div
               variants={scaleIn}
               initial="hidden"
               animate={isInView ? 'visible' : 'hidden'}
               transition={ANIMATION_CONFIG.transitions.scaleIn}
-              className="border-accent absolute -right-6 -bottom-6 -z-10 h-32 w-32 rounded-2xl border-2"
+              className="border-primary absolute -right-6 -bottom-6 h-32 w-32 rounded-2xl border-2"
             />
           </motion.div>
 
-          {/* Content */}
           <motion.div
             variants={slideInFromRight}
             initial="hidden"
@@ -168,7 +165,6 @@ export function About() {
               </p>
             </div>
 
-            {/* Stats */}
             <div className="border-border mt-12 grid grid-cols-2 gap-6 border-t pt-8 sm:grid-cols-4 sm:gap-8">
               {STATS.map((stat, index) => {
                 const Icon = stat.icon;

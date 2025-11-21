@@ -43,7 +43,7 @@ export function Founder() {
         <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
           <div className="order-2 lg:order-1">
             <div className="relative">
-              <div className="aspect-4/5 overflow-hidden rounded-2xl">
+              <div className="relative z-10 aspect-4/5 overflow-hidden rounded-2xl">
                 <Image
                   src="/images/home/founder.jpg"
                   alt="Marcia Nadinho - Fundadora"
@@ -53,7 +53,7 @@ export function Founder() {
                   priority
                 />
               </div>
-              <div className="border-accent absolute -right-6 -bottom-6 -z-10 h-32 w-32 rounded-2xl border-2" />
+              <div className="border-primary absolute -right-6 -bottom-6 h-32 w-32 rounded-2xl border-2" />
             </div>
           </div>
 

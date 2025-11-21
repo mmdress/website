@@ -8,7 +8,7 @@ export default function SiteLayout({ children }: ISiteLayoutProps) {
   return (
     <div className="flex min-h-screen flex-col">
       <Header />
-      {children}
+      <div className="pt-20 lg:pt-24">{children}</div>
       <Footer />
     </div>
   );

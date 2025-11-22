@@ -22,14 +22,14 @@ export function CTA() {
         <div className="bg-accent border-primary relative overflow-hidden border-l-4 p-12 text-center lg:p-16">
           <div className="mx-auto max-w-2xl">
             <div className="mb-6 flex items-center justify-center gap-3">
-              <div className="bg-accent h-px w-12" />
-              <span className="text-accent text-sm tracking-[0.3em] uppercase">
+              <div className="bg-primary h-px w-12" />
+              <span className="text-primary text-sm font-semibold tracking-[0.3em] uppercase">
                 {CTA_CONTENT.label}
               </span>
-              <div className="bg-accent h-px w-12" />
+              <div className="bg-primary h-px w-12" />
             </div>
 
-            <h2 className="text-primary mb-6 text-4xl tracking-tight sm:text-5xl lg:text-6xl">
+            <h2 className="text-foreground mb-6 text-4xl tracking-tight sm:text-5xl lg:text-6xl">
               {CTA_CONTENT.title.line1}
               <br />
               {CTA_CONTENT.title.line2}
@@ -40,7 +40,10 @@ export function CTA() {
             </p>
 
             <div className="flex flex-wrap justify-center gap-4">
-              <Button asChild className="px-12 py-6 font-semibold uppercase">
+              <Button
+                asChild
+                className="text-md w-72 py-6 font-semibold uppercase"
+              >
                 <Link href={ROUTES.CONTACT}>
                   {CTA_CONTENT.buttonText}
                   <ArrowRight className="h-5 w-5" />

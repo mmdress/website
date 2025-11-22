@@ -1,4 +1,12 @@
 import { PageHeader } from '@/components/layout';
+import { CTA } from '@/components/sections/shared';
+import {
+  Partners,
+  TeamMembersCarousel,
+  BrandPartners,
+  TeamValues,
+  JoinTeamCTA,
+} from '@/components/sections/team';
 
 export default function Team() {
   return (
@@ -18,6 +26,12 @@ export default function Team() {
           alt: 'Nossa Equipe',
         }}
       />
+      <Partners />
+      <TeamMembersCarousel />
+      <BrandPartners />
+      <TeamValues />
+      <JoinTeamCTA />
+      <CTA />
     </div>
   );
 }

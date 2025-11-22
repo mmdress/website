@@ -15,6 +15,10 @@ export default function Projetos() {
           </span>
         }
         description="Conheça uma seleção dos nossos trabalhos mais recentes que exemplificam nossa abordagem única ao design e à arquitetura."
+        backgroundImage={{
+          src: '/images/projects/header.jpg',
+          alt: 'Projetos',
+        }}
       />
       <ProjectsCatalog />
       <ProjectsStats />

@@ -1,5 +1,6 @@
 import { PageHeader } from '@/components/layout';
-import { ProjectsCatalog } from '@/components/sections/projects';
+import { ProjectsCatalog, ProjectsStats } from '@/components/sections/projects';
+import { CTA } from '@/components/sections/shared';
 
 export default function Projetos() {
   return (
@@ -16,6 +17,8 @@ export default function Projetos() {
         description="Conheça uma seleção dos nossos trabalhos mais recentes que exemplificam nossa abordagem única ao design e à arquitetura."
       />
       <ProjectsCatalog />
+      <ProjectsStats />
+      <CTA />
     </div>
   );
 }

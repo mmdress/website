@@ -1,7 +1,6 @@
 'use client';
 
-import { useEffect, useState, useCallback, ReactNode } from 'react';
-import Image from 'next/image';
+import { useEffect, useState, useCallback } from 'react';
 import Link from 'next/link';
 import {
   CheckCircle,
@@ -31,36 +30,7 @@ import {
 } from '@/components/ui';
 import { ROUTES } from '@/utils/routes';
 
-interface SlideWrapperProps {
-  src: string;
-  alt: string;
-  overlayOpacity?: string;
-  priority?: boolean;
-  children: ReactNode;
-}
-
-function SlideWrapper({
-  src,
-  alt,
-  overlayOpacity = 'bg-black/30',
-  priority = false,
-  children,
-}: SlideWrapperProps) {
-  return (
-    <div className="relative h-full w-full">
-      <Image
-        src={src}
-        alt={alt}
-        width={1536}
-        height={1024}
-        className="h-full w-full object-cover"
-        priority={priority}
-      />
-      <div className={`absolute inset-0 ${overlayOpacity}`} />
-      {children}
-    </div>
-  );
-}
+import { SlideWrapper } from './SlideWrapper';
 
 const slides = [
   {
@@ -201,7 +171,6 @@ export function Hero() {
         ]}
       >
         <CarouselContent className="h-[768px] md:h-[1024px]">
-          {/* Main Hero Slide */}
           <CarouselItem className="h-full p-0">
             <SlideWrapper
               src="https://images.unsplash.com/photo-1679862342541-e408d4f3ab80?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBsaXZpbmclMjByb29tJTIwaW50ZXJpb3J8ZW58MXx8fHwxNzYwNzU4MDc4fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
@@ -271,7 +240,6 @@ export function Hero() {
             </SlideWrapper>
           </CarouselItem>
 
-          {/* Other Slides */}
           {slides.map((slide) => (
             <CarouselItem key={slide.id} className="h-full p-0">
               <SlideWrapper
@@ -329,7 +297,6 @@ export function Hero() {
         <CarouselNext className="right-4 hidden bg-white/10 text-white hover:bg-white/20 md:flex" />
       </Carousel>
 
-      {/* Dots Navigation */}
       <div className="absolute bottom-20 left-1/2 z-20 flex -translate-x-1/2 gap-2">
         {Array.from({ length: totalSlides }).map((_, index) => (
           <button
@@ -345,7 +312,6 @@ export function Hero() {
         ))}
       </div>
 
-      {/* Scroll Down Indicator */}
       <div className="absolute bottom-6 left-1/2 z-20 -translate-x-1/2 animate-bounce">
         <Mouse className="hidden h-6 w-6 text-white/80 drop-shadow-lg md:block" />
         <CircleArrowDown className="block h-6 w-6 text-white/80 drop-shadow-lg md:hidden" />

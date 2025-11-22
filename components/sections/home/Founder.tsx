@@ -38,13 +38,12 @@ const CREDENTIALS: Credential[] = [
 
 export function Founder() {
   return (
-    <section className="bg-white py-20 lg:py-32">
+    <section id="founder" className="bg-white py-20 lg:py-32">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
-          {/* Image */}
           <div className="order-2 lg:order-1">
             <div className="relative">
-              <div className="aspect-4/5 overflow-hidden rounded-2xl">
+              <div className="relative z-10 aspect-4/5 overflow-hidden rounded-2xl">
                 <Image
                   src="/images/home/founder.jpg"
                   alt="Marcia Nadinho - Fundadora"
@@ -54,12 +53,10 @@ export function Founder() {
                   priority
                 />
               </div>
-              {/* Decorative Element */}
-              <div className="border-accent absolute -right-6 -bottom-6 -z-10 h-32 w-32 rounded-2xl border-2" />
+              <div className="border-primary absolute -right-6 -bottom-6 h-32 w-32 rounded-2xl border-2" />
             </div>
           </div>
 
-          {/* Content */}
           <div className="order-1 lg:order-2">
             <div className="mb-6">
               <span className="text-primary text-sm tracking-widest uppercase">
@@ -75,7 +72,6 @@ export function Founder() {
               Arquiteta & Urbanista
             </div>
 
-            {/* Quote */}
             <div className="bg-muted relative mb-8 rounded-xl p-8">
               <Quote className="text-primary/20 absolute top-4 left-4 h-10 w-10" />
               <p className="text-foreground pl-6 leading-relaxed italic">
@@ -86,7 +82,6 @@ export function Founder() {
               </p>
             </div>
 
-            {/* Biography */}
             <div className="text-muted-foreground mb-8 space-y-4 leading-relaxed">
               <p>
                 Formada pela FAU-USP, Marcia fundou a MMDress Arquitetura e
@@ -103,7 +98,6 @@ export function Founder() {
               </p>
             </div>
 
-            {/* Credentials */}
             <div className="space-y-4">
               {CREDENTIALS.map((credential) => {
                 const Icon = credential.icon;

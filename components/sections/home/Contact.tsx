@@ -6,7 +6,7 @@ import { ContactForm, ContactInfoItem } from '@/shared-components';
 export function Contact() {
   return (
     <section
-      id="contato"
+      id="contact"
       className="bg-foreground/98 py-20 text-white lg:py-32"
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">

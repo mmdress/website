@@ -114,9 +114,8 @@ export function Portfolio() {
   }, [activeCategory]);
 
   return (
-    <section id="projetos" className="bg-white py-20 lg:py-32" ref={ref}>
+    <section id="portfolio" className="bg-white py-20 lg:py-32" ref={ref}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Header */}
         <motion.div
           variants={fadeInUp}
           initial="hidden"
@@ -138,7 +137,6 @@ export function Portfolio() {
           </p>
         </motion.div>
 
-        {/* Filter Buttons */}
         <motion.div
           variants={fadeInUpSmall}
           initial="hidden"
@@ -156,7 +154,6 @@ export function Portfolio() {
           ))}
         </motion.div>
 
-        {/* Projects Grid */}
         <AnimatePresence mode="wait">
           <motion.div
             key={activeCategory}

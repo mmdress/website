@@ -1,4 +1,5 @@
 import { PageHeader } from '@/components/layout';
+import { CTA } from '@/components/sections/shared';
 import {
   History,
   Values,
@@ -27,6 +28,7 @@ export default function Sobre() {
       <Values />
       <MissionVision />
       <Stats />
+      <CTA />
     </div>
   );
 }

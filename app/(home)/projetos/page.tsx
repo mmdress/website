@@ -1,4 +1,5 @@
 import { PageHeader } from '@/components/layout';
+import { ProjectsCatalog } from '@/components/sections/projects';
 
 export default function Projetos() {
   return (
@@ -14,6 +15,7 @@ export default function Projetos() {
         }
         description="Conheça uma seleção dos nossos trabalhos mais recentes que exemplificam nossa abordagem única ao design e à arquitetura."
       />
+      <ProjectsCatalog />
     </div>
   );
 }

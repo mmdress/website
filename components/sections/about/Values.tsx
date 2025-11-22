@@ -42,7 +42,7 @@ const VALUES_CONTENT = {
 
 export function Values() {
   return (
-    <section className="bg-muted py-20 lg:py-32">
+    <section className="bg-accent py-20 lg:py-32">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mx-auto mb-16 max-w-3xl text-center">
           <span className="text-primary mb-6 block text-sm tracking-widest uppercase">
@@ -60,7 +60,10 @@ export function Values() {
           {VALUES.map((value) => {
             const Icon = value.icon;
             return (
-              <div key={value.title} className="bg-white p-8 text-center">
+              <div
+                key={value.title}
+                className="rounded-lg bg-white p-8 text-center"
+              >
                 <div className="bg-accent text-primary mb-6 inline-flex h-16 w-16 items-center justify-center">
                   <Icon className="h-8 w-8" />
                 </div>

@@ -7,7 +7,7 @@ import {
   Stats,
 } from '@/components/sections/about';
 
-export default function Sobre() {
+export default function About() {
   return (
     <div className="pt-20 lg:pt-24">
       <PageHeader

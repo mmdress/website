@@ -2,7 +2,7 @@ import { PageHeader } from '@/components/layout';
 import { ProjectsCatalog, ProjectsStats } from '@/components/sections/projects';
 import { CTA } from '@/components/sections/shared';
 
-export default function Projetos() {
+export default function Projects() {
   return (
     <div className="pt-20 lg:pt-24">
       <PageHeader

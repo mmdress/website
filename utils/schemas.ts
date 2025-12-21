@@ -1,11 +1,17 @@
 import { z } from 'zod';
 
 export const contactFormSchema = z.object({
-  name: z.string().min(2, 'Nome deve ter pelo menos 2 caracteres'),
-  email: z.email('E-mail inválido'),
-  phone: z.string().min(11, 'Prencha com um número de telefone válido'),
-  subject: z.string().min(1, 'Selecione um assunto'),
-  message: z.string().min(10, 'Mensagem deve ter pelo menos 10 caracteres'),
+  name: z
+    .string()
+    .min(2, { message: 'Nome deve ter pelo menos 2 caracteres' })
+    .max(100, { message: 'Nome deve ter no máximo 100 caracteres' }),
+  email: z.email({ message: 'E-mail inválido' }),
+  phone: z.string().optional(),
+  subject: z.string().optional(),
+  message: z
+    .string()
+    .min(10, { message: 'Mensagem deve ter pelo menos 10 caracteres' })
+    .max(1000, { message: 'Mensagem deve ter no máximo 1000 caracteres' }),
 });
 
 export type ContactFormData = z.infer<typeof contactFormSchema>;

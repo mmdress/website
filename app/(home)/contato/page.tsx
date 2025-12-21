@@ -1,4 +1,5 @@
 import { PageHeader } from '@/components/layout';
+import { ContactSection, MapSection, OfficeSection } from '@/components/sections/contact';
 
 export default function Contact() {
   return (
@@ -18,6 +19,10 @@ export default function Contact() {
           alt: 'Entre em Contato',
         }}
       />
+
+      <ContactSection />
+      <MapSection />
+      <OfficeSection />
     </div>
   );
 }

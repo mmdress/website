@@ -158,7 +158,7 @@ export function Hero() {
   const totalSlides = 1 + slides.length;
 
   return (
-    <div className="relative w-full">
+    <div className="relative w-full overflow-hidden">
       <Carousel
         className="h-full w-full"
         setApi={setApi}
@@ -170,8 +170,8 @@ export function Hero() {
           }),
         ]}
       >
-        <CarouselContent className="h-[768px] md:h-[1024px]">
-          <CarouselItem className="h-full p-0">
+        <CarouselContent className="ml-0 h-[768px] md:h-[1024px]">
+          <CarouselItem className="h-full pl-0">
             <SlideWrapper
               src="https://images.unsplash.com/photo-1679862342541-e408d4f3ab80?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBsaXZpbmclMjByb29tJTIwaW50ZXJpb3J8ZW58MXx8fHwxNzYwNzU4MDc4fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
               alt="Design de interiores moderno"
@@ -241,7 +241,7 @@ export function Hero() {
           </CarouselItem>
 
           {slides.map((slide) => (
-            <CarouselItem key={slide.id} className="h-full p-0">
+            <CarouselItem key={slide.id} className="h-full pl-0">
               <SlideWrapper
                 src={slide.src}
                 alt={slide.alt}
@@ -302,11 +302,10 @@ export function Hero() {
           <button
             key={index}
             onClick={() => scrollTo(index)}
-            className={`h-2 rounded-full transition-all duration-300 ${
-              current === index + 1
-                ? 'bg-primary w-8'
-                : 'w-2 bg-white/50 hover:bg-white/70'
-            }`}
+            className={`h-2 rounded-full transition-all duration-300 ${current === index + 1
+              ? 'bg-primary w-8'
+              : 'w-2 bg-white/50 hover:bg-white/70'
+              }`}
             aria-label={`Go to slide ${index + 1}`}
           />
         ))}

@@ -97,7 +97,7 @@ export function Differentials() {
   const isInView = useInView(ref, ANIMATION_CONFIG.viewport);
 
   return (
-    <section id="differentials" className="bg-muted py-20 lg:py-32" ref={ref}>
+    <section id="differentials" className="bg-accent/70 py-20 lg:py-32" ref={ref}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-7xl">
           <motion.div

@@ -91,7 +91,11 @@ export function ContactForm({ theme = 'dark' }: ContactFormProps) {
           </div>
         </div>
 
-        <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
+        <form
+          onSubmit={handleSubmit(onSubmit)}
+          className="space-y-6"
+          suppressHydrationWarning
+        >
           <FormField label="Nome Completo" id="name" error={errors.name}>
             <Input
               id="name"

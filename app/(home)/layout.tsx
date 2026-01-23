@@ -6,7 +6,7 @@ interface ISiteLayoutProps {
 
 export default function SiteLayout({ children }: ISiteLayoutProps) {
   return (
-    <div className="flex min-h-screen flex-col">
+    <div className="flex min-h-screen flex-col overflow-x-hidden">
       <Header />
       {children}
       <Footer />

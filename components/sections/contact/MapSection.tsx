@@ -2,7 +2,7 @@ import { CONTACT_DATA } from '@/utils/constants';
 
 export function MapSection() {
   return (
-    <section className="bg-muted py-20 lg:py-32">
+    <section className="bg-accent/70 py-20 lg:py-32">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-12 text-center">
           <h2 className="text-foreground mb-4 text-3xl tracking-tight sm:text-4xl">

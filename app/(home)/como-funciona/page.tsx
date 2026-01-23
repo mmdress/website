@@ -1,4 +1,11 @@
 import { PageHeader } from '@/components/layout';
+import {
+  ProcessSteps,
+  IntegratedSolution,
+  TimelineSection,
+  BenefitsSection,
+} from '@/components/sections/how-it-works';
+import { CTA } from '@/components/sections/shared';
 
 export default function HowItWorks() {
   return (
@@ -7,17 +14,22 @@ export default function HowItWorks() {
         badge="Como Funciona"
         title={
           <span className="truncate">
-            Do Sonho à Realidade:
+            Projetando Sonhos.
             <br />
-            <span className="text-primary">Nosso Processo</span>
+            <span className="text-primary">Construindo Realidades.</span>
           </span>
         }
-        description="Um método estruturado e transparente que garante excelência em cada etapa do seu projeto, do primeiro contato à entrega final."
+        description="Uma jornada completa de encantamento, onde cada etapa é pensada para transformar sua visão em um espaço único, do primeiro contato à entrega final."
         backgroundImage={{
           src: '/images/how-it-works/header.jpg',
           alt: 'Como Funciona',
         }}
       />
+      <IntegratedSolution />
+      <ProcessSteps />
+      <TimelineSection />
+      <BenefitsSection />
+      <CTA />
     </div>
   );
 }

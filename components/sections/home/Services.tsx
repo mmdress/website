@@ -21,7 +21,7 @@ interface Service {
 const SERVICES: Service[] = [
   {
     icon: Building2,
-    title: 'Arquitetura Residencial',
+    title: 'Projeto Arquitetônico',
     description:
       'Projetos arquitetônicos completos para residências que refletem seu estilo de vida e personalidade.',
   },
@@ -33,13 +33,13 @@ const SERVICES: Service[] = [
   },
   {
     icon: Ruler,
-    title: 'Projetos Comerciais',
+    title: 'Marcenaria Sob Medida',
     description:
-      'Espaços comerciais que unem identidade de marca com funcionalidade e conforto.',
+      'Móveis sob medida com excelência, criados para o seu espaço e estilo.',
   },
   {
     icon: Palette,
-    title: 'Consultoria de Design',
+    title: 'Consultoria',
     description:
       'Orientação especializada para escolha de acabamentos, cores e elementos decorativos.',
   },

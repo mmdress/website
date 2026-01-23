@@ -121,7 +121,7 @@ const benefits = [
 ];
 
 const statistics = [
-  { value: '+150', label: 'Projetos entregues' },
+  { value: '+300', label: 'Projetos entregues' },
   { value: '+25 MIL', label: 'M² Projetados' },
   { value: '+7', label: 'Anos de experiência' },
 ];

@@ -26,7 +26,7 @@ const CREDENTIALS: Credential[] = [
     icon: Briefcase,
     label: 'Experiência',
     title: '15+ Anos de Atuação',
-    subtitle: '150+ Projetos Executados com Excelência',
+    subtitle: '300+ Projetos Executados com Excelência',
   },
   {
     icon: Award,
@@ -92,7 +92,7 @@ export function Founder() {
               </p>
 
               <p>
-                Com mais de 15 anos de experiência, já liderou mais de 150
+                Com mais de 15 anos de experiência, já liderou mais de 300
                 projetos residenciais e comerciais, sempre com foco na
                 satisfação total do cliente e na excelência de cada detalhe.
               </p>

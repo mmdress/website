@@ -15,7 +15,7 @@ interface Stat {
 const STATS: Stat[] = [
   {
     icon: Building2,
-    value: '150+',
+    value: '300+',
     label: 'Projetos Concluídos',
   },
   {

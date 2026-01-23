@@ -5,7 +5,7 @@ interface Stat {
 
 const STATS: Stat[] = [
   {
-    value: '150+',
+    value: '300+',
     label: 'Projetos Entregues',
   },
   {

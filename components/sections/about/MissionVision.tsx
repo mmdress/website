@@ -11,19 +11,19 @@ const MISSION_VISION_ITEMS: MissionVisionItem[] = [
     icon: Eye,
     title: 'Missão',
     description:
-      'Criar ambientes únicos e funcionais que reflitam a personalidade e atendam às necessidades de cada cliente, utilizando design inovador, materiais de qualidade e processos transparentes, superando expectativas em cada projeto.',
+      'Criar ambientes que vão além da estética, refletindo a essência, a história e o estilo de vida de cada cliente. Projetamos com sensibilidade, inteligência e excelência técnica, unindo design autoral, materiais de alta qualidade e processos transparentes para transformar sonhos em espaços funcionais, sofisticados e cheios de significado.',
   },
   {
     icon: Target,
     title: 'Visão',
     description:
-      'Ser referência nacional em arquitetura e design de interiores, reconhecida pela excelência criativa, sustentabilidade e capacidade de transformar espaços em experiências memoráveis que inspiram e valorizam a vida das pessoas.',
+      'Ser referência nacional em arquitetura e design de interiores, reconhecida pela capacidade de transformar espaços em experiências memoráveis, que inspiram, acolhem e valorizam a vida das pessoas — com criatividade, sustentabilidade e impacto positivo duradouro.',
   },
   {
     icon: Award,
     title: 'Compromisso',
     description:
-      'Entregar projetos que unem estética refinada e funcionalidade inteligente, respeitando prazos, orçamentos e o meio ambiente, mantendo comunicação transparente e construindo relacionamentos baseados em confiança mútua.',
+      'Entregar projetos conduzidos com responsabilidade, ética e atenção absoluta aos detalhes. Unimos estética refinada e funcionalidade inteligente, respeitando prazos, orçamentos e o meio ambiente, mantendo uma comunicação clara e construindo relações baseadas em confiança, cuidado e excelência do início ao fim.',
   },
 ] as const;
 

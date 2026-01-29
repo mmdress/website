@@ -7,6 +7,9 @@ import {
   Home,
   Lightbulb,
   FileCheck,
+  Eye,
+  Users,
+  Shield,
   type LucideIcon,
 } from 'lucide-react';
 import { motion, useInView, type Variants } from 'motion/react';
@@ -20,40 +23,40 @@ interface Service {
 
 const SERVICES: Service[] = [
   {
-    icon: Building2,
-    title: 'Projeto Arquitetônico',
+    icon: Eye,
+    title: 'Design Personalizado',
     description:
-      'Projetos arquitetônicos completos para residências que refletem seu estilo de vida e personalidade.',
+      'Projetos exclusivos com renderizações 3D realistas, permitindo visualizar cada ambiente com clareza e segurança antes da execução.',
   },
   {
-    icon: Home,
-    title: 'Design de Interiores',
+    icon: Users,
+    title: 'Gestão Completa',
     description:
-      'Ambientes interiores sofisticados com seleção cuidadosa de materiais, cores e mobiliário.',
-  },
-  {
-    icon: Ruler,
-    title: 'Marcenaria Sob Medida',
-    description:
-      'Móveis sob medida com excelência, criados para o seu espaço e estilo.',
+      'Coordenamos equipes, fornecedores e cronogramas, eliminando preocupações e garantindo harmonia em todas as etapas.',
   },
   {
     icon: Palette,
-    title: 'Consultoria',
+    title: 'Curadoria de Materiais',
     description:
-      'Orientação especializada para escolha de acabamentos, cores e elementos decorativos.',
+      'Seleção cuidadosa de materiais e acabamentos, otimizando seu tempo e assegurando escolhas coerentes com o conceito.',
   },
   {
-    icon: Lightbulb,
-    title: 'Projeto Luminotécnico',
+    icon: Ruler,
+    title: 'Marcenaria Exclusiva',
     description:
-      'Iluminação estratégica que valoriza ambientes e cria atmosferas únicas.',
+      'Marcenaria sob medida com soluções inteligentes, acabamento refinado e total integração ao projeto.',
   },
   {
-    icon: FileCheck,
-    title: 'Acompanhamento de Obra',
+    icon: Building2,
+    title: 'Expertise Comprovada',
     description:
-      'Gestão e fiscalização para garantir que o projeto seja executado com perfeição.',
+      'Equipe de arquitetos experientes com portfólio sólido, assegurando excelência técnica e atenção aos detalhes.',
+  },
+  {
+    icon: Shield,
+    title: 'Transparência Financeira',
+    description:
+      'Orçamentos claros e estudos de viabilidade desde o início, proporcionando previsibilidade e controle financeiro.',
   },
 ] as const;
 
@@ -98,13 +101,15 @@ export function Services() {
             </span>
           </div>
           <h2 className="text-foreground mb-6 text-3xl tracking-tight sm:text-4xl lg:text-5xl">
-            Soluções Completas
+            Excelência em Cada
             <br />
-            em Arquitetura
+            Etapa do seu Projeto
           </h2>
           <p className="text-muted-foreground">
-            Oferecemos um portfólio completo de serviços para transformar seus
-            espaços em ambientes extraordinários.
+            Na MMDress, cada detalhe é pensado para oferecer segurança, fluidez
+            e alto padrão do início ao fim. Nosso processo une design autoral,
+            gestão eficiente e acompanhamento próximo, garantindo uma
+            experiência tranquila e resultados excepcionais.
           </p>
         </motion.div>
 

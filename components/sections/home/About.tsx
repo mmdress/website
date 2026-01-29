@@ -137,31 +137,31 @@ export function About() {
             </div>
 
             <h2 className="text-foreground mb-6 text-3xl tracking-tight sm:text-4xl lg:text-5xl">
-              Design com Propósito
-              <br />e Elegância
+              Arquitetura é Experiência,
+              <br />
+              Intenção e Identidade
             </h2>
 
             <div className="text-muted-foreground space-y-4">
               <p>
-                A MMDress Arquitetura e Interiores nasceu da paixão por criar
-                ambientes que transcendem o convencional. Com anos de
-                experiência no mercado, nos especializamos em projetos
-                residenciais e comerciais que unem estética refinada e
-                funcionalidade inteligente.
+                Cada projeto nasce de um olhar sensível, estratégico e
+                profundamente autoral, pensado para pessoas que reconhecem
+                valor, estética e significado em cada detalhe. Criamos espaços
+                que refletem quem você é, elevam sua rotina e permanecem atuais
+                ao longo do tempo.
               </p>
 
               <p>
-                Nossa filosofia se baseia em compreender profundamente as
-                necessidades e sonhos de cada cliente, traduzindo-os em espaços
-                únicos que contam histórias e inspiram emoções. Cada projeto é
-                uma jornada colaborativa onde design, conforto e inovação se
-                encontram.
+                A MMDress traduz o luxo contemporâneo com leveza, sofisticação e
+                precisão. Nada é óbvio. Nada é genérico. Tudo é cuidadosamente
+                desenhado para ser exclusivo, atemporal e inspirador.
               </p>
 
               <p>
-                Do conceito inicial à entrega final, cuidamos de cada detalhe
-                com dedicação e excelência, garantindo que seu espaço não apenas
-                atenda, mas supere todas as expectativas.
+                Bem-vindo a um universo onde o design encontra propósito, e onde
+                cada ambiente conta uma história — a sua! Aqui, arquitetura é
+                mais do que forma e função: é experiência, intenção e
+                identidade.
               </p>
             </div>
 

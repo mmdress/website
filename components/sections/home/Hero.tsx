@@ -3,19 +3,17 @@
 import { useEffect, useState, useCallback } from 'react';
 import Link from 'next/link';
 import {
-  CheckCircle,
-  Clock,
-  DollarSign,
   Home,
-  Award,
   Palette,
-  Ruler,
-  Hammer,
-  Wrench,
-  Box,
-  Sparkles,
   CircleArrowDown,
   Mouse,
+  PenTool,
+  Shield,
+  Eye,
+  Layers,
+  Gem,
+  Sparkles,
+  Target,
 } from 'lucide-react';
 import Autoplay from 'embla-carousel-autoplay';
 
@@ -37,30 +35,31 @@ const slides = [
     id: 1,
     src: 'https://images.unsplash.com/photo-1668026694348-b73c5eb5e299?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxraXRjaGVuJTIwY2FiaW5ldCUyMGludGVyaW9yJTIwZGVzaWdufGVufDF8fHx8MTc2MDgxNDQyOXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
     alt: 'Slide 2',
-    title: '<span>Arquitetura</span> e Interiores',
-    subtitle: 'Design exclusivo para cada espaço',
+    title: 'Arquitetura e Interiores de <span>Alto Padrão</span>',
+    subtitle:
+      'Design autoral pensado para cada espaço, cada rotina e cada detalhe',
     buttonText: 'Nossos serviços',
     buttonLink: ROUTES.SERVICES,
     benefits: [
       {
+        icon: PenTool,
+        text: 'Soluções exclusivas para valorizar espaço e estilo de vida',
+      },
+      {
+        icon: Eye,
+        text: 'Ambientes elegantes, funcionais e atemporais',
+      },
+      {
         icon: Palette,
-        text: 'Projetos arquitetônicos personalizados',
-      },
-      {
-        icon: Ruler,
-        text: 'Design de interiores completo',
-      },
-      {
-        icon: Sparkles,
-        text: 'Consultoria em decoração e ambientação',
+        text: 'Curadoria estética com harmonia e personalidade',
       },
       {
         icon: Home,
-        text: 'Reformas e adequações residenciais',
+        text: 'Planejamento inteligente para modernizar ambientes',
       },
       {
-        icon: CheckCircle,
-        text: 'Acompanhamento do projeto à execução',
+        icon: Shield,
+        text: 'Gestão completa com fidelidade ao projeto',
       },
     ],
   },
@@ -69,29 +68,29 @@ const slides = [
     src: 'https://images.unsplash.com/photo-1760072513376-67a46aab0fd1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlbGVnYW50JTIwYmVkcm9vbSUyMGludGVyaW9yJTIwZGVzaWdufGVufDF8fHx8MTc2MDgxNDMzMnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
     alt: 'Slide 3',
     title: 'Marcenaria <span>Especializada</span>',
-    subtitle: 'Móveis sob medida com excelência',
+    subtitle: 'Móveis sob medida criados com precisão, estética e excelência',
     buttonText: 'Entre em contato',
     buttonLink: ROUTES.CONTACT,
     benefits: [
       {
-        icon: Hammer,
-        text: 'Móveis planejados sob medida',
+        icon: PenTool,
+        text: 'Projetados exclusivamente para o seu espaço com estética refinada',
       },
       {
-        icon: Box,
-        text: 'Armários, estantes e painéis personalizados',
+        icon: Layers,
+        text: 'Soluções únicas que aliam organização e sofisticação',
       },
       {
-        icon: Wrench,
-        text: 'Acabamentos de alta qualidade',
+        icon: Eye,
+        text: 'Curadoria de materiais e detalhes que elevam o resultado',
       },
       {
-        icon: Ruler,
-        text: 'Projetos exclusivos para seu espaço',
+        icon: Home,
+        text: 'Cada peça nasce a partir do projeto arquitetônico',
       },
       {
-        icon: CheckCircle,
-        text: 'Materiais nobres e duráveis',
+        icon: Gem,
+        text: 'Seleção criteriosa para garantir beleza e longevidade',
       },
     ],
   },
@@ -99,24 +98,24 @@ const slides = [
 
 const benefits = [
   {
-    icon: Award,
-    text: 'Sem atrasos, prazo em contrato',
+    icon: Eye,
+    text: 'Olhar sensível, estratégico e profundamente autoral',
   },
   {
-    icon: DollarSign,
-    text: 'Orçamento definido desde o início',
+    icon: Target,
+    text: 'Projetos pensados para pessoas que reconhecem valor e estética',
   },
   {
-    icon: Clock,
-    text: 'Cuidamos de tudo para facilitar sua vida',
+    icon: Sparkles,
+    text: 'Espaços que refletem quem você é e elevam sua rotina',
   },
   {
-    icon: Home,
-    text: 'Projetos residenciais e comerciais',
+    icon: Gem,
+    text: 'Luxo contemporâneo com leveza, sofisticação e precisão',
   },
   {
-    icon: CheckCircle,
-    text: 'Design exclusivo e funcionalidade garantida',
+    icon: Shield,
+    text: 'Exclusivo, atemporal e inspirador em cada detalhe',
   },
 ];
 
@@ -302,10 +301,11 @@ export function Hero() {
           <button
             key={index}
             onClick={() => scrollTo(index)}
-            className={`h-2 rounded-full transition-all duration-300 ${current === index + 1
-              ? 'bg-primary w-8'
-              : 'w-2 bg-white/50 hover:bg-white/70'
-              }`}
+            className={`h-2 rounded-full transition-all duration-300 ${
+              current === index + 1
+                ? 'bg-primary w-8'
+                : 'w-2 bg-white/50 hover:bg-white/70'
+            }`}
             aria-label={`Go to slide ${index + 1}`}
           />
         ))}

@@ -11,25 +11,25 @@ const VALUES: Value[] = [
     icon: Target,
     title: 'Excelência',
     description:
-      'Comprometimento com a qualidade superior em cada detalhe do projeto, da concepção à entrega final.',
+      'Compromisso inegociável presente na escuta atenta, rigor técnico e cuidado absoluto com cada detalhe, do conceito à entrega final.',
   },
   {
     icon: Sparkles,
     title: 'Inovação',
     description:
-      'Busca constante por soluções criativas e tecnologias que elevam a experiência dos nossos clientes.',
+      'Olhar inquieto e visionário que busca constantemente novas soluções, unindo estética, funcionalidade e inteligência em projetos atuais e atemporais.',
   },
   {
     icon: Heart,
     title: 'Paixão',
     description:
-      'Amor genuíno pelo que fazemos, traduzido em dedicação integral a cada projeto que desenvolvemos.',
+      'Amor genuíno pela arquitetura e pelas histórias dos clientes, traduzido em dedicação integral e cuidado verdadeiro em transformar sonhos em realidade.',
   },
   {
     icon: Users,
     title: 'Parceria',
     description:
-      'Relacionamento colaborativo com clientes, fornecedores e equipe, construindo confiança duradoura.',
+      'Relações sólidas baseadas em confiança, transparência e respeito. Caminhamos juntos oferecendo segurança e clareza, porque projetar é também cuidar.',
   },
 ] as const;
 
@@ -37,7 +37,7 @@ const VALUES_CONTENT = {
   label: 'Nossos Valores',
   title: 'O Que Nos Move',
   description:
-    'Princípios fundamentais que guiam cada decisão e cada projeto que desenvolvemos na MMDress.',
+    'Princípios que guiam cada decisão, cada traço e cada experiência criada pela MMDress, refletindo a essência de sua fundadora e o cuidado com cada cliente.',
 } as const;
 
 export function Values() {

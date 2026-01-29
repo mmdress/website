@@ -19,20 +19,20 @@ const CREDENTIALS: Credential[] = [
   {
     icon: GraduationCap,
     label: 'Formação',
-    title: 'Arquitetura e Urbanismo - FAU-USP',
-    subtitle: 'Especialização em Design de Interiores e Sustentabilidade',
+    title: 'Arquitetura e Urbanismo',
+    subtitle: 'Trajetória sólida com consistência e dedicação',
   },
   {
     icon: Briefcase,
     label: 'Experiência',
-    title: '15+ Anos de Atuação',
-    subtitle: '300+ Projetos Executados com Excelência',
+    title: '20+ Anos de Atuação',
+    subtitle: 'Projetos entregues com excelência e responsabilidade',
   },
   {
     icon: Award,
-    label: 'Reconhecimentos',
-    title: 'CAU/BR Ativa | CREA Registrada',
-    subtitle: 'Premiações em Design de Interiores e Arquitetura Residencial',
+    label: 'Reconhecimento',
+    title: 'Liderança & Visão Estratégica',
+    subtitle: 'Clientes que indicam, confiam e voltam',
   },
 ] as const;
 
@@ -68,33 +68,42 @@ export function Founder() {
               Marcia Nadinho
             </h2>
 
-            <div className="text-primary mb-8 text-xl font-semibold tracking-wide uppercase">
-              Arquiteta & Urbanista
+            <div className="text-primary mb-8 text-xl font-semibold tracking-wide">
+              Fundadora & CEO da MMDress Arquitetura & Interiores
             </div>
 
             <div className="bg-muted relative mb-8 rounded-xl p-8">
               <Quote className="text-primary/20 absolute top-4 left-4 h-10 w-10" />
               <p className="text-foreground pl-6 leading-relaxed italic">
-                &quot;Acredito que arquitetura vai além de criar espaços
-                bonitos. É sobre entender profundamente as pessoas, seus sonhos
-                e sua forma de viver, e traduzir isso em ambientes que inspiram,
-                acolhem e transformam vidas.&quot;
+                &quot;Há profissionais que projetam espaços. E há aqueles que
+                transformam vidas através deles. Espaços precisam fazer sentido
+                para quem vive neles. Precisam acolher, facilitar, inspirar e
+                permanecer relevantes com o passar do tempo.&quot;
               </p>
             </div>
 
             <div className="text-muted-foreground mb-8 space-y-4 leading-relaxed">
               <p>
-                Formada pela FAU-USP, Marcia fundou a MMDress Arquitetura e
-                Interiores em 2009, após anos de experiência em renomados
-                escritórios de arquitetura. Sua visão única de unir estética
-                refinada com funcionalidade inteligente se tornou a assinatura
-                do escritório.
+                A história de Marcia Nadinho começa muito antes da MMDress.
+                Começa com uma inquietação genuína: entender pessoas. Entender
+                seus sonhos, suas rotinas, seus silêncios e desejos mais
+                profundos. Desde cedo, ela percebeu que arquitetura não é apenas
+                técnica — é sensibilidade, escuta e responsabilidade.
               </p>
 
               <p>
-                Com mais de 15 anos de experiência, já liderou mais de 300
-                projetos residenciais e comerciais, sempre com foco na
-                satisfação total do cliente e na excelência de cada detalhe.
+                Formada em Arquitetura e Urbanismo, Márcia construiu sua
+                trajetória com consistência, dedicação e um olhar atento aos
+                detalhes. Ao longo dos anos, amadureceu uma visão muito clara:
+                espaços precisam fazer sentido para quem vive neles.
+              </p>
+
+              <p>
+                Sob sua liderança, a MMDress se tornou sinônimo de organização,
+                estética refinada, transparência e entregas feitas com
+                responsabilidade. Marcia acompanha cada projeto de perto,
+                conduzindo decisões com firmeza e cuidado. Seus clientes não se
+                sentem apenas atendidos — sentem-se amparados.
               </p>
             </div>
 

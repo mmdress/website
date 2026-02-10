@@ -9,13 +9,13 @@ const HISTORY_IMAGE = {
 
 const HISTORY_CONTENT = {
   label: 'Nossa História',
-  title: 'Uma Jornada de',
-  titleHighlight: 'Paixão e Excelência',
+  title: 'Uma Jornada de Paixão,',
+  titleHighlight: 'Excelência e Propósito',
   paragraphs: [
-    'A MMDress Arquitetura e Interiores nasceu em 2009 da visão de criar espaços que transcendem o convencional. Fundada por profissionais apaixonados por design e arquitetura, a empresa cresceu organicamente, conquistando a confiança de clientes em todo o Brasil.',
-    'Ao longo de mais de 15 anos, desenvolvemos projetos residenciais e comerciais que se tornaram referência em qualidade, inovação e atenção aos detalhes. Cada projeto é tratado como único, combinando a visão criativa da nossa equipe com as necessidades específicas de cada cliente.',
-    'Nossa trajetória é marcada por constante evolução, incorporando as mais recentes tendências de design sustentável, tecnologia e conforto, sempre mantendo a elegância atemporal como nossa assinatura.',
-    'Hoje, somos reconhecidos pela capacidade de transformar sonhos em realidade, criando ambientes que não apenas atendem expectativas, mas as superam, estabelecendo novos padrões de qualidade e sofisticação.',
+    'A MMDress Arquitetura & Interiores nasce do olhar sensível, visionário e inquieto de Márcia Nadinho, arquiteta movida pela crença de que espaços bem pensados transformam não apenas ambientes, mas a forma de viver.',
+    'Desde o início, a MMDress foi construída com base em dedicação profunda, sensibilidade estética e rigor técnico. Cada projeto sempre foi tratado como único, porque cada cliente carrega uma história, um sonho e uma expectativa que merecem ser respeitados e cuidadosamente traduzidos em forma, função e beleza.',
+    'Ao longo de mais de 15 anos de trajetória, a MMDress consolidou-se no mercado por sua capacidade de unir arquitetura, interiores e execução com inteligência, elegância e responsabilidade. Projetos passaram a carregar uma assinatura reconhecível: ambientes sofisticados, acolhedores, atemporais e profundamente conectados com quem os habita.',
+    'Hoje, a MMDress é reconhecida pela confiança que constrói, pela segurança que oferece e pela capacidade de transformar sonhos em experiências reais, entregando mais do que projetos, criando lugares que fazem sentido, acolhem e permanecem no tempo.',
   ],
 } as const;
 

@@ -25,49 +25,49 @@ const DIFFERENTIALS: Differential[] = [
     icon: LayoutDashboard,
     title: 'Design Personalizado',
     description:
-      'Desenvolvemos projetos exclusivos com renderizações 3D fotorrealistas, permitindo que você visualize cada ambiente antes mesmo da execução começar.',
+      'Desenvolvemos projetos exclusivos, com renderizações 3D realistas, permitindo que você visualize cada ambiente com clareza e segurança antes do início da execução.',
   },
   {
     icon: Users,
     title: 'Gestão Completa',
     description:
-      'Coordenamos toda a equipe de profissionais e fornecedores, eliminando preocupações com múltiplos contatos e garantindo harmonia na execução.',
+      'Coordenamos equipes, fornecedores e cronogramas, eliminando preocupações e garantindo harmonia, organização e eficiência em todas as etapas do projeto.',
   },
   {
     icon: ShoppingCart,
     title: 'Curadoria de Materiais',
     description:
-      'Selecionamos e adquirimos todos os materiais necessários, economizando seu tempo e garantindo escolhas certeiras para o seu projeto.',
+      'Selecionamos cuidadosamente materiais, acabamentos e fornecedores, otimizando seu tempo e assegurando escolhas coerentes com o conceito e qualidade desejada.',
   },
   {
     icon: Ruler,
     title: 'Marcenaria Exclusiva',
     description:
-      'Projetamos e executamos móveis planejados sob medida, otimizando espaços e criando soluções funcionais que refletem seu estilo.',
+      'Projetamos e executamos marcenaria sob medida, com soluções inteligentes, acabamento refinado e total integração ao projeto arquitetônico e de interiores.',
   },
   {
     icon: Award,
     title: 'Expertise Comprovada',
     description:
-      'Nossa equipe de arquitetos e engenheiros possui vasta experiência, com mais de 120 projetos entregues em São Paulo, assegurando excelência em cada detalhe.',
+      'Nossa equipe reúne arquitetos e profissionais experientes, com um portfólio sólido de projetos entregues, assegurando excelência técnica e atenção absoluta aos detalhes.',
   },
   {
     icon: FileText,
     title: 'Transparência Financeira',
     description:
-      'Apresentamos orçamento detalhado e estudo de viabilidade antes do início, garantindo total clareza sobre o investimento do seu projeto.',
+      'Apresentamos orçamentos claros e estudos de viabilidade desde o início, proporcionando previsibilidade, controle financeiro e tranquilidade ao longo do processo.',
   },
   {
     icon: Clock,
     title: 'Compromisso com Prazos',
     description:
-      'Cumprimos rigorosamente o cronograma estabelecido em contrato, proporcionando segurança e previsibilidade para o seu planejamento.',
+      'Cumprimos rigorosamente o cronograma estabelecido em contrato, oferecendo segurança, organização e previsibilidade para o seu planejamento.',
   },
   {
     icon: Headphones,
     title: 'Suporte Contínuo',
     description:
-      'Mantemos você informado com atualizações constantes via WhatsApp e oferecemos assistência pós-entrega para sua total tranquilidade.',
+      'Mantemos um acompanhamento próximo e comunicação constante, com atualizações frequentes e suporte pós-entrega para total tranquilidade.',
   },
 ] as const;
 
@@ -97,7 +97,11 @@ export function Differentials() {
   const isInView = useInView(ref, ANIMATION_CONFIG.viewport);
 
   return (
-    <section id="differentials" className="bg-accent/70 py-20 lg:py-32" ref={ref}>
+    <section
+      id="differentials"
+      className="bg-accent/70 py-20 lg:py-32"
+      ref={ref}
+    >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-7xl">
           <motion.div
@@ -113,6 +117,12 @@ export function Differentials() {
             <h2 className="text-foreground mb-6 max-w-3xl text-3xl tracking-tight sm:text-4xl lg:text-5xl">
               Excelência em cada etapa do seu projeto
             </h2>
+            <p className="text-muted-foreground max-w-2xl">
+              Na MMDress, cada detalhe é pensado para oferecer segurança,
+              fluidez e alto padrão do início ao fim. Nosso processo une design
+              autoral, gestão eficiente e acompanhamento próximo, garantindo uma
+              experiência tranquila e resultados excepcionais.
+            </p>
           </motion.div>
 
           <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4 lg:gap-10">

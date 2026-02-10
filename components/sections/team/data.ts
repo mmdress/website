@@ -6,22 +6,22 @@ export const PARTNERS: TeamMember[] = [
   {
     id: 1,
     name: 'Marcia Nadinho',
-    role: 'Arquiteta e Fundadora',
+    role: 'Fundadora & CEO',
     description:
-      'Especialista em projetos residenciais de alto padrão com mais de 15 anos de experiência no mercado.',
+      'Arquiteta com mais de 20 anos de experiência multidisciplinar, unindo visão comercial, gestão estratégica e sensibilidade estética.',
     image:
-      'https://images.unsplash.com/photo-1667400104797-132f6be037ce?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjB3b21hbiUyMGFyY2hpdGVjdHxlbnwxfHx8fDE3NjA4MDcxMDh8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-    education: 'Arquitetura e Urbanismo - FAU-USP',
+      '/images/team/marcia.jpg',
+    education: 'Arquitetura e Urbanismo',
     specialties: [
-      'Arquitetura Residencial',
+      'Liderança Estratégica',
       'Gestão de Projetos',
-      'Design Sustentável',
+      'Visão Comercial',
     ],
-    bio: 'Formada pela FAU-USP, Mariana fundou a MMDress após anos de experiência em renomados escritórios de arquitetura. Sua paixão por criar espaços únicos e funcionais a levou a desenvolver uma metodologia própria que combina estética refinada com soluções práticas. Especialista em projetos residenciais de alto padrão, já liderou mais de 100 projetos bem-sucedidos.',
+    bio: 'Márcia construiu sua trajetória de forma sólida e multidisciplinar, atuando em empresas de grande porte em posições estratégicas antes de fundar a MMDress. Movida por uma inquietação genuína de entender pessoas e seus sonhos, ela desenvolveu uma visão única que une sensibilidade estética, rigor técnico e gestão eficiente. Sob sua liderança, cada projeto é conduzido com critério, clareza e responsabilidade, criando espaços que fazem sentido e transformam vidas.',
     social: {
       linkedin: '#',
       instagram: 'https://www.instagram.com/mmdress.arquitetura/',
-      email: 'mariana@mmdress.arq.br',
+      email: 'marcia@mmdress.arq.br',
     },
   },
   {
@@ -31,7 +31,7 @@ export const PARTNERS: TeamMember[] = [
     description:
       'Criativo visionário especializado em criar ambientes únicos que refletem personalidade e estilo.',
     image:
-      'https://images.unsplash.com/photo-1752170080622-18196de87763?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBtYW4lMjBkZXNpZ25lcnxlbnwxfHx8fDE3NjA3Mjg1MjJ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+      '/images/team/douglas.png',
     education: 'Design de Interiores - FAAP',
     specialties: [
       'Design de Interiores',

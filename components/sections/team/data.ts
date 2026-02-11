@@ -7,10 +7,7 @@ export const PARTNERS: TeamMember[] = [
     id: 1,
     name: 'Marcia Nadinho',
     role: 'Fundadora & CEO',
-    description:
-      'Arquiteta com mais de 20 anos de experiência multidisciplinar, unindo visão comercial, gestão estratégica e sensibilidade estética.',
-    image:
-      '/images/team/marcia.jpg',
+    image: '/images/team/marcia.jpg',
     education: 'Arquitetura e Urbanismo',
     specialties: [
       'Liderança Estratégica',
@@ -18,103 +15,107 @@ export const PARTNERS: TeamMember[] = [
       'Visão Comercial',
     ],
     bio: 'Márcia construiu sua trajetória de forma sólida e multidisciplinar, atuando em empresas de grande porte em posições estratégicas antes de fundar a MMDress. Movida por uma inquietação genuína de entender pessoas e seus sonhos, ela desenvolveu uma visão única que une sensibilidade estética, rigor técnico e gestão eficiente. Sob sua liderança, cada projeto é conduzido com critério, clareza e responsabilidade, criando espaços que fazem sentido e transformam vidas.',
-    social: {
-      linkedin: '#',
-      instagram: 'https://www.instagram.com/mmdress.arquitetura/',
-      email: 'marcia@mmdress.arq.br',
-    },
   },
   {
     id: 2,
     name: 'Douglas Nadinho',
-    role: 'Sócio',
-    description:
-      'Criativo visionário especializado em criar ambientes únicos que refletem personalidade e estilo.',
-    image:
-      '/images/team/douglas.png',
-    education: 'Design de Interiores - FAAP',
+    role: 'Responsável Marcenaria',
+    image: '/images/team/douglas.png',
+    education: 'Formado em Administração',
     specialties: [
-      'Design de Interiores',
-      'Seleção de Materiais',
-      'Paleta de Cores',
+      'Gestão de Marcenaria',
+      'Planejamento de Produção',
+      'Controle de Qualidade',
     ],
-    bio: 'Com formação pela FAAP e experiência internacional, Lucas traz uma visão contemporânea e sofisticada para cada projeto. Apaixonado por texturas, cores e composições, ele tem a habilidade única de traduzir a personalidade dos clientes em ambientes envolventes. Seu trabalho já foi publicado em diversas revistas de decoração.',
-    social: {
-      linkedin: '#',
-      instagram: 'https://www.instagram.com/mmdress.arquitetura/',
-      email: 'lucas@mmdress.arq.br',
-    },
+    bio: 'À frente do setor de marcenaria da MMDress Arquitetura e Interiores, Douglas é o responsável por transformar ideias em realidade tangível, unindo técnica, precisão e criatividade em cada detalhe. Como sócio da empresa, sua missão é garantir que cada peça reflita a excelência, a funcionalidade e o design que são marcas registradas do nosso trabalho. Através da marcenaria, ele dá forma aos sonhos dos nossos clientes, criando ambientes personalizados que unem beleza, durabilidade e sofisticação. Com dedicação e visão estratégica, Douglas segue impulsionando a MMDress como referência em marcenaria de alto padrão, contribuindo para entregas impecáveis que encantam e surpreendem.',
   },
 ];
 
 export const OTHER_MEMBERS: TeamMember[] = [
   {
+    id: 1,
+    name: 'Ana Fiorin',
+    role: 'Designer de Interiores & Projetista',
+    bio: 'Desenvolve projetos com dedicação, atenção aos detalhes e foco total nas necessidades do cliente.',
+    image: '/images/team/ana-fiorin.jpg',
+    specialties: ['Projetos de Interiores', 'Detalhamento Técnico'],
+  },
+  {
+    id: 2,
+    name: 'Apoena Mesquita',
+    role: 'Arquiteta',
+    bio: 'Atua no desenvolvimento dos projetos, garantindo soluções funcionais, estéticas e alinhadas às expectativas do cliente.',
+    image: '/images/team/apoena-mesquita.jpg',
+    specialties: ['Arquitetura', 'Desenvolvimento de Projetos'],
+  },
+  {
     id: 3,
-    name: 'Beatriz Santos',
-    role: 'Gerente de Projetos',
-    description:
-      'Coordena cada etapa do projeto garantindo excelência na execução, prazos e orçamentos.',
-    image:
-      'https://images.unsplash.com/photo-1758518727888-ffa196002e59?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBidXNpbmVzc3dvbWFuJTIwcG9ydHJhaXR8ZW58MXx8fHx8MTc2MDcwNDcwMXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-    education: 'Engenharia Civil - Politécnica',
-    specialties: ['Gestão de Obras', 'Planejamento', 'Orçamentos'],
-    bio: 'Engenheira civil com MBA em Gestão de Projetos, Beatriz é responsável por transformar ideias em realidade de forma organizada e eficiente. Sua expertise em coordenação de equipes e fornecedores garante que cada projeto seja entregue no prazo e dentro do orçamento, sem comprometer a qualidade.',
-    social: {
-      linkedin: '#',
-      instagram: 'https://www.instagram.com/mmdress.arquitetura/',
-      email: 'beatriz@mmdress.arq.br',
-    },
+    name: 'Geovana Borin',
+    role: 'Arquiteta & Gerente Comercial',
+    bio: 'Desenvolve os projetos e gerencia a área comercial com excelência, conectando estratégia, atendimento e resultados.',
+    image: '/images/team/geovana-borin.jpg',
+    specialties: [
+      'Arquitetura',
+      'Gestão Comercial',
+      'Relacionamento com Clientes',
+    ],
   },
   {
     id: 4,
-    name: 'Rafael Costa',
-    role: 'Arquiteto Sênior',
-    description:
-      'Expertise em projetos comerciais e soluções arquitetônicas inovadoras e sustentáveis.',
-    image:
-      'https://images.unsplash.com/photo-1629507208649-70919ca33793?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBidXNpbmVzc21hbiUyMHBvcnRyYWl0fGVufDF8fHx8fDE3NjA3OTgzNjh8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-    education: 'Arquitetura e Urbanismo - Mackenzie',
-    specialties: ['Projetos Comerciais', 'BIM', 'Arquitetura Sustentável'],
-    bio: 'Arquiteto formado pelo Mackenzie com especialização em sustentabilidade e tecnologia BIM. Rafael lidera projetos comerciais complexos, desde escritórios corporativos até espaços de varejo. Sua abordagem integra funcionalidade, identidade de marca e eficiência energética, sempre buscando soluções inovadoras.',
-    social: {
-      linkedin: '#',
-      instagram: 'https://www.instagram.com/mmdress.arquitetura/',
-      email: 'rafael@mmdress.arq.br',
-    },
+    name: 'Isabela Lopes',
+    role: 'Designer de Interiores & Projetista',
+    bio: 'Responsável pelo desenvolvimento dos projetos e pelo suporte completo ao cliente ao longo de todo o processo.',
+    image: '/images/team/isabela-lopes.jpg',
+    specialties: ['Projetos de Interiores', 'Suporte ao Cliente'],
   },
   {
     id: 5,
-    name: 'Carolina Oliveira',
-    role: 'Arquiteta Junior',
-    description:
-      'Talento emergente com paixão por soluções criativas e sustentáveis em projetos residenciais.',
-    image:
-      'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx5b3VuZyUyMHByb2Zlc3Npb25hbCUyMHdvbWFufGVufDF8fHx8MTc2MTE0MTIwMHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-    education: 'Arquitetura e Urbanismo - FAAP',
-    specialties: ['Desenho Técnico', 'SketchUp', 'Renderização'],
-    bio: 'Recém-formada pela FAAP, Carolina traz energia e novas perspectivas para a equipe. Especializada em ferramentas de modelagem 3D e renderização, ela contribui para a visualização criativa dos projetos.',
-    social: {
-      linkedin: '#',
-      instagram: 'https://www.instagram.com/mmdress.arquitetura/',
-      email: 'carolina@mmdress.arq.br',
-    },
+    name: 'Lana Kristiny',
+    role: 'Auxiliar de Projetos',
+    bio: 'Auxilia todo o time de projetos, organiza e entrega documentações e acompanha as obras junto à equipe.',
+    image: '/images/team/lana-kristiny.jpg',
+    specialties: [
+      'Apoio a Projetos',
+      'Documentação',
+      'Acompanhamento de Obras',
+    ],
   },
   {
     id: 6,
-    name: 'Thiago Martins',
-    role: 'Coordenador de Obras',
-    description:
-      'Experiência em gestão de equipes e execução de obras com foco em qualidade e prazos.',
-    image:
-      'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBtYW4lMjBzbWlsZXxlbnwxfHx8fDE3NjExNDEyMDB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-    education: 'Engenharia Civil - UNICAMP',
-    specialties: ['Gestão de Obras', 'Fornecedores', 'Controle de Qualidade'],
-    bio: 'Engenheiro civil com vasta experiência em coordenação de obras residenciais e comerciais. Thiago garante que cada detalhe seja executado com precisão, mantendo o padrão de excelência em todas as etapas.',
-    social: {
-      linkedin: '#',
-      instagram: 'https://www.instagram.com/mmdress.arquitetura/',
-      email: 'thiago@mmdress.arq.br',
-    },
+    name: 'Catharina D’Almeida',
+    role: 'Auxiliar De Projetos & Projetista',
+    bio: 'Executa projetos civis com dedicação, atenção técnica e comprometimento com os prazos.',
+    image: '/images/team/catharina-dalmeida.jpg',
+    specialties: ['Projetos Civis', 'Detalhamento Técnico'],
+  },
+  {
+    id: 7,
+    name: 'Maria Zahner',
+    role: 'Assistente de Projetos',
+    bio: 'Executa projetos com excelência, apoia o time em todas as demandas, e dá suporte direto à gestão.',
+    image: '/images/team/maria-zahner.jpg',
+    specialties: ['Projetos de Interiores', 'Apoio a Projetos'],
+  },
+  {
+    id: 8,
+    name: 'Isabella Nadinho',
+    role: 'Analista Executiva',
+    bio: 'Responsável pela gestão do time executivo, orçamentos e acompanhamento das obras, garantindo alinhamento e eficiência.',
+    image: '/images/team/isabella-nadinho.jpg',
+    specialties: ['Gestão Executiva e orçamentária', 'Acompanhamento'],
+  },
+  {
+    id: 9,
+    name: 'Lilian Rodrigues',
+    role: 'Assistente Administrativo',
+    bio: 'Realiza o acompanhamento administrativo do início ao fim dos processos, atua no atendimento ao cliente e dá suporte às demandas do escritório, garantindo organização e eficiência no dia a dia',
+    image: '/images/team/lilian-rodrigues.jpg',
+    specialties: [
+      'Rotinas Administrativas',
+      'Atendimento ao Cliente',
+      'Organização',
+      'Suporte Operacional',
+    ],
   },
 ];
 
@@ -162,4 +163,3 @@ export const TEAM_VALUES: TeamValue[] = [
     description: 'Comprometimento total com prazos, qualidade e ética.',
   },
 ];
-

@@ -1,5 +1,7 @@
 'use client';
 
+import { useEffect, useState } from 'react';
+
 import {
   Carousel,
   CarouselContent,
@@ -12,6 +14,15 @@ import { MemberCard } from './MemberCard';
 import { OTHER_MEMBERS } from './data';
 
 export function TeamMembersCarousel() {
+  const [members, setMembers] = useState<typeof OTHER_MEMBERS>([]);
+
+  useEffect(() => {
+    const shuffledMembers = [...OTHER_MEMBERS].sort(() => Math.random() - 0.5);
+
+    // eslint-disable-next-line react-hooks/set-state-in-effect
+    setMembers([...shuffledMembers]);
+  }, []);
+
   return (
     <section className="bg-accent/70 py-20 lg:py-32">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -37,17 +48,12 @@ export function TeamMembersCarousel() {
             className="w-full"
           >
             <CarouselContent className="-ml-4">
-              {OTHER_MEMBERS.map((member) => (
+              {members.map((member) => (
                 <CarouselItem
                   key={member.id}
                   className="pl-4 md:basis-1/2 lg:basis-1/3"
                 >
-                  <MemberCard
-                    member={member}
-                    variant="compact"
-                    showFullBio={false}
-                    maxSpecialties={2}
-                  />
+                  <MemberCard member={member} />
                 </CarouselItem>
               ))}
             </CarouselContent>

@@ -1,8 +1,7 @@
 import Image from 'next/image';
-import { GraduationCap, Linkedin, Instagram, Mail } from 'lucide-react';
+import { GraduationCap } from 'lucide-react';
 
 import { PARTNERS } from './data';
-import { SocialLink } from './SocialLink';
 import { Badge } from '@/components/ui';
 
 export function Partners() {
@@ -85,21 +84,6 @@ export function Partners() {
                         </Badge>
                       ))}
                     </div>
-                  </div>
-
-                  <div className="flex items-center gap-4">
-                    <SocialLink
-                      href={member.social.linkedin}
-                      icon={<Linkedin className="h-5 w-5" />}
-                    />
-                    <SocialLink
-                      href={member.social.instagram}
-                      icon={<Instagram className="h-5 w-5" />}
-                    />
-                    <SocialLink
-                      href={`mailto:${member.social.email}`}
-                      icon={<Mail className="h-5 w-5" />}
-                    />
                   </div>
                 </div>
               </div>

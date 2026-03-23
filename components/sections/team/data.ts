@@ -20,7 +20,7 @@ export const PARTNERS: TeamMember[] = [
     id: 2,
     name: 'Douglas Nadinho',
     role: 'Responsável Marcenaria',
-    image: '/images/team/douglas.png',
+    image: '/images/team/douglas.jpg',
     education: 'Formado em Administração',
     specialties: [
       'Gestão de Marcenaria',
@@ -32,14 +32,6 @@ export const PARTNERS: TeamMember[] = [
 ];
 
 export const OTHER_MEMBERS: TeamMember[] = [
-  {
-    id: 1,
-    name: 'Ana Fiorin',
-    role: 'Designer de Interiores & Projetista',
-    bio: 'Desenvolve projetos com dedicação, atenção aos detalhes e foco total nas necessidades do cliente.',
-    image: '/images/team/ana-fiorin.jpg',
-    specialties: ['Projetos de Interiores', 'Detalhamento Técnico'],
-  },
   {
     id: 2,
     name: 'Apoena Mesquita',

@@ -505,45 +505,35 @@ export const FOUNDER_CREDENTIALS: FounderCredential[] = [
 // Testimonials Section Data
 export const TESTIMONIALS: Testimonial[] = [
   {
-    name: 'Ana Paula e Carlos',
-    role: 'Proprietários de Apartamento',
-    image:
-      'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=200&h=200&fit=crop',
-    text: 'A MMDress transformou nosso apartamento antigo em um lar moderno e acolhedor. A atenção aos detalhes e o profissionalismo da equipe superaram todas as nossas expectativas.',
+    name: 'Ana Florin',
+    text: 'Escritório impecável e atendimento excelente! A equipe é muito atenciosa e receptiva. Indico de olhos fechados!',
   },
   {
-    name: 'Ricardo Mendes',
-    role: 'Empresário',
-    image:
-      'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=200&h=200&fit=crop',
-    text: 'Reforma completa do meu escritório. Projeto impecável, prazo cumprido e orçamento respeitado. A MMDress entendeu perfeitamente o conceito que eu queria transmitir.',
+    name: 'Vinicius Maciel',
+    text: 'Oi boa tarde! Gostaria de compartilhar minha experiência com a MMDRESS,foi uma experiência incrível,eu nunca tinha feito uma reforma com uma empresa de arquitetura antes, contratei a MMDRESS para fazer uma reforma em um apartamento de 45m, e tenho que confessar, fiquei muito surpreendido com o resultado, ficou incrível eles são muito atenciosos e cuidadosos, muito obrigado MMDRESS pela atenção e cuidado com o meu apartamento. Quero agradecer toda equipe, Mirella, Geovana, David, Yuri, Douglas e Márcia. Até a próxima',
   },
   {
-    name: 'Juliana e Felipe',
-    role: 'Casal',
-    image:
-      'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=200&h=200&fit=crop',
-    text: 'Desde o primeiro contato até a entrega final, a experiência foi excepcional. O projeto 3D nos ajudou a visualizar tudo antes da execução. Recomendamos de olhos fechados!',
+    name: 'Rosa Rose',
+    text: 'Tive uma ótima experiência com a empresa. Profissionais competentes, atendimento organizado e soluções criativas. Destaque para a Geovana, muito atenciosa, profissional e sempre disposta a ajudar. Excelente liderança e cuidado com os detalhes!',
   },
   {
-    name: 'Marina Costa',
-    role: 'Advogada',
-    image:
-      'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=200&h=200&fit=crop',
-    text: 'A escolha pela MMDress foi a melhor decisão. Eles cuidaram de absolutamente tudo, desde o projeto até a escolha dos móveis. O resultado ficou ainda melhor do que imaginei.',
+    name: 'Isabela Lopes',
+    text: 'Minha experiência foi excelente, todos os profissionais são muito bem capacitados com a liderança da Márcia, Douglas Geovana e o Davi, o ambiente é muito bom e bem humorado.',
   },
   {
-    name: 'Pedro e Camila',
-    role: 'Médicos',
-    image:
-      'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop',
-    text: 'Profissionalismo, criatividade e comprometimento. A equipe da MMDress nos apresentou soluções que otimizaram cada centímetro do nosso espaço. Estamos muito satisfeitos!',
+    name: 'Felipe Shiroma',
+    text: 'Estava em busca de um lugar que cuidasse tanto da reforma quanto dos móveis planejados, e encontrei a MMdress. Recebi suporte completo durante toda a obra e fiquei extremamente satisfeito com o resultado. Sem dúvida, é o lugar certo onde: "Mãos que projetam sonhos!"',
   },
   {
-    name: 'Lucas Oliveira',
-    role: 'Arquiteto',
-    image:
-      'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&h=200&fit=crop',
-    text: 'Como profissional da área, posso afirmar que a qualidade técnica e estética dos projetos da MMDress é excepcional. A execução foi impecável e o acompanhamento constante fez toda a diferença.',
+    name: 'Tatiane Rodrigues',
+    text: 'Super recomendo a MMDRESS, tive acompanhamento total do projeto, Márcia e sua equipe teve muita paciência em me atender e deixar os móveis do jeitinho que eu gostaria. Além disso me deu vários toques no apartamento que me ajudou MT em toda a decoração e finalização. Os móveis são de excelente qualidade e valores e condições de pagamento são ótimos. Quem visita meu apartamento fica encantado.',
   },
+  {
+    name: 'Lidiane Venâncio Coutinho',
+    text: 'Excelente atendimento super indico a empresa MMDRESS Equipe capacitados desde o início da execução do projeto a entrega da obra final'
+  },
+  {
+    name: 'Márcio Lupianes',
+    text: 'Já realizei dois projetos com MMDress aos quais fiquei muito satisfeito com a criatividade em relação a arquitetura/ desenho, quanto a qualidade dos materiais. Assim como o suporte durante toda a obra.'
+  }
 ];

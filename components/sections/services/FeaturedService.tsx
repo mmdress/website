@@ -2,7 +2,6 @@
 
 import { CheckCircle } from 'lucide-react';
 import Image from 'next/image';
-import { useRef } from 'react';
 
 import { SERVICES } from './data';
 
@@ -16,21 +15,22 @@ export function FeaturedService({
   onServiceChange,
 }: FeaturedServiceProps) {
   const service = SERVICES[activeService];
-  const sectionRef = useRef<HTMLElement>(null);
 
   return (
-    <section ref={sectionRef} id="featured-service" className="bg-accent/70 py-20 lg:py-32">
+    <section id="featured-service" className="bg-accent/70 py-20 lg:py-32">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
           <div className="relative">
             <div className="absolute -left-8 -top-8 -z-10 h-40 w-40 rounded-2xl bg-accent/10" />
-            <div className="aspect-3/4 overflow-hidden rounded-2xl">
+            <div className="relative aspect-3/4 overflow-hidden rounded-2xl">
               <Image
                 src={service.image}
                 alt={service.title}
-                width={600}
-                height={800}
-                className="h-full w-full object-cover"
+                fill
+                sizes="(max-width: 1023px) 100vw, min(720px, 50vw)"
+                quality={92}
+                className="object-cover"
+                priority={activeService === 0}
               />
             </div>
             <div className="absolute -bottom-8 -right-8 -z-10 h-40 w-40 rounded-2xl bg-primary/10" />

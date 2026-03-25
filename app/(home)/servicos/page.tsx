@@ -24,7 +24,7 @@ export default function Services() {
             <span className="text-primary">Cada Detalhe</span>
           </span>
         }
-        description="Do conceito à execução, transformamos ambientes em experiências extraordinárias através de soluções completas em arquitetura e design."
+        description="Do projeto de interiores em 3D ao executivo civil, obra, marcenaria, ambientação e paisagismo — acompanhamento integrado em cada etapa."
         backgroundImage={{
           src: '/images/services/header.jpg',
           alt: 'Nossos Serviços',

@@ -67,7 +67,7 @@ export function ContactForm({ theme = 'dark' }: ContactFormProps) {
           href={`${CONTACT_DATA.whatsapp.url}?text=Olá! Gostaria de solicitar um orçamento para meu projeto.`}
           target="_blank"
           rel="noopener noreferrer"
-          className="group mb-8 flex w-full items-center justify-center gap-3 rounded-full bg-[#25D366] px-6 py-4 text-xs font-bold tracking-wide text-white uppercase transition-all duration-300 hover:bg-[#20BA5A] lg:text-base"
+          className="group mb-8 flex w-full items-center justify-center gap-3 rounded-full bg-[#25D366] px-6 py-4 text-xs font-bold tracking-wide text-black uppercase transition-all duration-300 hover:bg-[#20BA5A] lg:text-base"
         >
           <MessageCircle className="h-5 w-5 transition-transform group-hover:scale-110" />
           Solicitar Orçamento via WhatsApp
@@ -181,7 +181,7 @@ export function ContactForm({ theme = 'dark' }: ContactFormProps) {
           <Button
             type="submit"
             disabled={isSubmitting}
-            className="bg-primary hover:bg-primary/90 w-full cursor-pointer rounded-full py-6 font-bold tracking-wide text-white uppercase"
+            className="bg-primary hover:bg-primary/90 w-full cursor-pointer rounded-full py-6 font-bold tracking-wide text-primary-foreground uppercase"
           >
             {isSubmitting ? 'Enviando...' : 'Enviar Mensagem'}
           </Button>

@@ -18,7 +18,6 @@ export function Founder() {
                   width={800}
                   height={1000}
                   className="h-full w-full object-cover"
-                  priority
                 />
               </div>
               <div className="border-primary absolute -right-6 -bottom-6 h-32 w-32 rounded-2xl border-2" />
@@ -36,7 +35,7 @@ export function Founder() {
               Marcia Nadinho
             </h2>
 
-            <div className="text-primary mb-8 text-xl font-semibold tracking-wide">
+            <div className="text-primary-foreground mb-8 text-xl font-semibold tracking-wide">
               Fundadora & CEO da MMDress Arquitetura & Interiores
             </div>
 

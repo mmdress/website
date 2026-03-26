@@ -109,7 +109,7 @@ export function Hero() {
                     >
                       <Link
                         href={ROUTES.SERVICES}
-                        className="font-semibold text-white"
+                        className="font-semibold text-primary-foreground"
                       >
                         Solicitar orçamento
                       </Link>
@@ -138,7 +138,7 @@ export function Hero() {
               <SlideWrapper
                 src={slide.src}
                 alt={slide.alt}
-                priority={slide.id === 1}
+                priority={false}
                 overlayOpacity="bg-black/40"
               >
                 <div className="absolute inset-0 z-10 flex flex-col justify-center px-4 bg-black/40">
@@ -175,7 +175,7 @@ export function Hero() {
                       >
                         <Link
                           href={slide.buttonLink}
-                          className="font-semibold text-white"
+                          className="font-semibold text-primary-foreground"
                         >
                           {slide.buttonText}
                         </Link>
@@ -191,17 +191,22 @@ export function Hero() {
         <CarouselNext className="right-4 hidden bg-white/10 text-white hover:bg-white/20 md:flex" />
       </Carousel>
 
-      <div className="absolute bottom-20 left-1/2 z-20 flex -translate-x-1/2 gap-2">
+      <div className="absolute bottom-20 left-1/2 z-20 flex -translate-x-1/2 gap-3">
         {Array.from({ length: totalSlides }).map((_, index) => (
           <button
             key={index}
             onClick={() => scrollTo(index)}
-            className={`h-2 rounded-full transition-all duration-300 ${current === index + 1
-              ? 'bg-primary w-8'
-              : 'w-2 bg-white/50 hover:bg-white/70'
-              }`}
+            className="group flex h-6 w-6 items-center justify-center rounded-full"
             aria-label={`Go to slide ${index + 1}`}
-          />
+          >
+            <span
+              className={`h-2 rounded-full transition-all duration-300 ${
+                current === index + 1
+                  ? 'bg-primary w-6'
+                  : 'w-2 bg-white/50 group-hover:bg-white/70'
+              }`}
+            />
+          </button>
         ))}
       </div>
 

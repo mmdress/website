@@ -51,7 +51,7 @@ export function TestimonialCard({ testimonial }: TestimonialCardProps) {
             <button
               type="button"
               onClick={() => setIsExpanded((prev) => !prev)}
-              className="text-primary font-semibold transition-opacity hover:opacity-80"
+              className="text-primary-foreground font-semibold transition-opacity hover:opacity-80"
             >
               {isExpanded ? 'Ver menos' : 'Ver mais'}
             </button>
@@ -60,7 +60,7 @@ export function TestimonialCard({ testimonial }: TestimonialCardProps) {
       </p>
 
       <div className="flex items-center gap-4">
-        <div className="shrink-0 overflow-hidden rounded-full bg-primary text-white flex items-center justify-center text-lg font-bold size-8">
+        <div className="shrink-0 overflow-hidden rounded-full bg-primary text-primary-foreground flex items-center justify-center text-base font-bold size-8">
           {getInitials(testimonial.name)}
         </div>
         <div className="text-foreground">{testimonial.name}</div>

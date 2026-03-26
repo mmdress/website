@@ -1,23 +1,6 @@
 import Image from 'next/image';
 
-const HISTORY_IMAGE = {
-  src: 'https://images.unsplash.com/photo-1661475765552-9a0c80c8b44e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhcmNoaXRlY3R1cmUlMjBzdHVkaW8lMjB3b3Jrc3BhY2V8ZW58MXx8fHwxNzYxMTY1MjU2fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-  alt: 'Architecture Studio',
-  width: 1080,
-  height: 1350,
-} as const;
-
-const HISTORY_CONTENT = {
-  label: 'Nossa História',
-  title: 'Uma Jornada de Paixão,',
-  titleHighlight: 'Excelência e Propósito',
-  paragraphs: [
-    'A MMDress Arquitetura & Interiores nasce do olhar sensível, visionário e inquieto de Márcia Nadinho, arquiteta movida pela crença de que espaços bem pensados transformam não apenas ambientes, mas a forma de viver.',
-    'Desde o início, a MMDress foi construída com base em dedicação profunda, sensibilidade estética e rigor técnico. Cada projeto sempre foi tratado como único, porque cada cliente carrega uma história, um sonho e uma expectativa que merecem ser respeitados e cuidadosamente traduzidos em forma, função e beleza.',
-    'Ao longo de mais de 15 anos de trajetória, a MMDress consolidou-se no mercado por sua capacidade de unir arquitetura, interiores e execução com inteligência, elegância e responsabilidade. Projetos passaram a carregar uma assinatura reconhecível: ambientes sofisticados, acolhedores, atemporais e profundamente conectados com quem os habita.',
-    'Hoje, a MMDress é reconhecida pela confiança que constrói, pela segurança que oferece e pela capacidade de transformar sonhos em experiências reais, entregando mais do que projetos, criando lugares que fazem sentido, acolhem e permanecem no tempo.',
-  ],
-} as const;
+import { HISTORY_CONTENT, HISTORY_IMAGE } from './data';
 
 export function History() {
   return (

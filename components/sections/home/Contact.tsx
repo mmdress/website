@@ -14,7 +14,7 @@ export function Contact() {
           {/* Contact Info */}
           <div>
             <div className="mb-6">
-              <span className="text-primary text-sm tracking-widest uppercase">
+              <span className="text-primary text-sm tracking-widest uppercase font-bold">
                 Entre em Contato
               </span>
             </div>

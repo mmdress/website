@@ -1,40 +1,8 @@
 import Image from 'next/image';
 
-import {
-  Award,
-  Briefcase,
-  GraduationCap,
-  Quote,
-  type LucideIcon,
-} from 'lucide-react';
+import { Quote, type LucideIcon } from 'lucide-react';
 
-interface Credential {
-  icon: LucideIcon;
-  label: string;
-  title: string;
-  subtitle: string;
-}
-
-const CREDENTIALS: Credential[] = [
-  {
-    icon: GraduationCap,
-    label: 'Formação',
-    title: 'Arquitetura e Urbanismo',
-    subtitle: 'Trajetória sólida com consistência e dedicação',
-  },
-  {
-    icon: Briefcase,
-    label: 'Experiência',
-    title: '20+ Anos de Atuação',
-    subtitle: 'Projetos entregues com excelência e responsabilidade',
-  },
-  {
-    icon: Award,
-    label: 'Reconhecimento',
-    title: 'Liderança & Visão Estratégica',
-    subtitle: 'Clientes que indicam, confiam e voltam',
-  },
-] as const;
+import { FOUNDER_CREDENTIALS } from './data';
 
 export function Founder() {
   return (
@@ -59,7 +27,7 @@ export function Founder() {
 
           <div className="order-1 lg:order-2">
             <div className="mb-6">
-              <span className="text-primary text-sm tracking-widest uppercase">
+              <span className="text-primary text-sm tracking-widest uppercase font-bold">
                 Fundadora
               </span>
             </div>
@@ -108,7 +76,7 @@ export function Founder() {
             </div>
 
             <div className="space-y-4">
-              {CREDENTIALS.map((credential) => {
+              {FOUNDER_CREDENTIALS.map((credential) => {
                 const Icon = credential.icon;
                 return (
                   <div

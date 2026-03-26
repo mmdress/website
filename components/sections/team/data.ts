@@ -20,7 +20,7 @@ export const PARTNERS: TeamMember[] = [
     id: 2,
     name: 'Douglas Nadinho',
     role: 'Responsável Marcenaria',
-    image: '/images/team/douglas.png',
+    image: '/images/team/douglas.jpg',
     education: 'Formado em Administração',
     specialties: [
       'Gestão de Marcenaria',
@@ -32,14 +32,6 @@ export const PARTNERS: TeamMember[] = [
 ];
 
 export const OTHER_MEMBERS: TeamMember[] = [
-  {
-    id: 1,
-    name: 'Ana Fiorin',
-    role: 'Designer de Interiores & Projetista',
-    bio: 'Desenvolve projetos com dedicação, atenção aos detalhes e foco total nas necessidades do cliente.',
-    image: '/images/team/ana-fiorin.jpg',
-    specialties: ['Projetos de Interiores', 'Detalhamento Técnico'],
-  },
   {
     id: 2,
     name: 'Apoena Mesquita',
@@ -121,28 +113,80 @@ export const OTHER_MEMBERS: TeamMember[] = [
 
 export const BRAND_PARTNERS: BrandPartner[] = [
   {
-    name: 'Tok&Stok',
-    logo: 'https://images.unsplash.com/photo-1611915387288-fd8d2f5f928b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBmdXJuaXR1cmUlMjBicmFuZHxlbnwxfHx8fDE3NjExNDEyMDB8MA&ixlib=rb-4.1.0&q=80&w=400',
+    name: 'Alliance - Vidros e Espelhos',
+    logo: '/images/partners/alliance.jpeg',
   },
   {
-    name: 'Leroy Merlin',
-    logo: 'https://images.unsplash.com/photo-1513694203232-719a280e022f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxob21lJTIwaW1wcm92ZW1lbnQlMjBzdG9yZXxlbnwxfHx8fDE3NjExNDEyMDB8MA&ixlib=rb-4.1.0&q=80&w=400',
+    name: 'Art Luz - Vidros e Espelhos',
+    logo: '/images/partners/art-luz.png',
   },
   {
-    name: 'Portobello',
-    logo: 'https://images.unsplash.com/photo-1600607687644-c7171b42498b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0aWxlcyUyMG1hcmJsZXxlbnwxfHx8fDE3NjExNDEyMDB8MA&ixlib=rb-4.1.0&q=80&w=400',
+    name: 'Biadola - Tintas',
+    logo: '/images/partners/biadola.jpeg',
   },
   {
-    name: 'Tramontina',
-    logo: 'https://images.unsplash.com/photo-1556909172-54557c7e4fb7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxraXRjaGVuJTIwd2FyZXxlbnwxfHx8fDE3NjExNDEyMDB8MA&ixlib=rb-4.1.0&q=80&w=400',
+    name: 'Casa Pinezi - Louças e Metais',
+    logo: '/images/partners/casa-pinezi.png',
   },
   {
-    name: 'Deca',
-    logo: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxiYXRocm9vbSUyMGZpeHR1cmVzfGVufDF8fHx8MTc2MTE0MTIwMHww&ixlib=rb-4.1.0&q=80&w=400',
+    name: 'CESTAC - Ar Condicionado',
+    logo: '/images/partners/cestac.png',
   },
   {
-    name: 'Marcenaria Premium',
-    logo: 'https://images.unsplash.com/photo-1617806118233-18e1de247200?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3b29kd29ya2luZ3xlbnwxfHx8fDE3NjExNDEyMDB8MA&ixlib=rb-4.1.0&q=80&w=400',
+    name: 'Clima UP - Ar Condicionado',
+    logo: '/images/partners/clima-up.png',
+  },
+  {
+    name: 'Dexco - Louças e Metais',
+    logo: '/images/partners/dexco.png',
+  },
+  {
+    name: 'Dunelli - Móveis Soltos',
+    logo: '/images/partners/dunelli.jpeg',
+  },
+  {
+    name: 'Grupo MSA - Indústria de Móveis',
+    logo: '/images/partners/grupo-msa.jpeg',
+  },
+  {
+    name: 'Home Fatto - Eletrodomésticos',
+    logo: '/images/partners/home-fatto.png',
+  },
+  {
+    name: 'Ilumine Light - Iluminação',
+    logo: '/images/partners/ilumine-light.png',
+  },
+  {
+    name: 'Maxi Banho - Louças e Metais',
+    logo: '/images/partners/maxi-banho.jpeg',
+  },
+  {
+    name: 'Nova Arte Acabamentos - Louças, Metais e Porcelanatos',
+    logo: '/images/partners/nova-arte.png',
+  },
+  {
+    name: 'Portobello Shop - Louças, Metais e Porcelanatos',
+    logo: '/images/partners/portobello.jpeg',
+  },
+  {
+    name: 'Rossi - Mármores',
+    logo: '/images/partners/rossi.jpeg',
+  },
+  {
+    name: 'Santa Bárbara Acabamentos - Pisos e Revestimentos',
+    logo: '/images/partners/santa-barbara.png',
+  },
+  {
+    name: 'SEV Exclusivv - Vidros e Espelhos',
+    logo: '/images/partners/sev-exclusivv.png',
+  },
+  {
+    name: 'Staccato - Pisos, Revestimentos, Louças e Metais',
+    logo: '/images/partners/staccato.png',
+  },
+  {
+    name: 'Trinti - Móveis Soltos',
+    logo: '/images/partners/trinti.png',
   },
 ];
 

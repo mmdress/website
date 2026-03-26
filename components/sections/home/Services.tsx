@@ -1,64 +1,10 @@
 'use client';
 
-import {
-  Ruler,
-  Palette,
-  Building2,
-  Home,
-  Lightbulb,
-  FileCheck,
-  Eye,
-  Users,
-  Shield,
-  type LucideIcon,
-} from 'lucide-react';
+import { type LucideIcon } from 'lucide-react';
 import { motion, useInView, type Variants } from 'motion/react';
 import { useRef } from 'react';
 
-interface Service {
-  icon: LucideIcon;
-  title: string;
-  description: string;
-}
-
-const SERVICES: Service[] = [
-  {
-    icon: Eye,
-    title: 'Design Personalizado',
-    description:
-      'Projetos exclusivos com renderizações 3D realistas, permitindo visualizar cada ambiente com clareza e segurança antes da execução.',
-  },
-  {
-    icon: Users,
-    title: 'Gestão Completa',
-    description:
-      'Coordenamos equipes, fornecedores e cronogramas, eliminando preocupações e garantindo harmonia em todas as etapas.',
-  },
-  {
-    icon: Palette,
-    title: 'Curadoria de Materiais',
-    description:
-      'Seleção cuidadosa de materiais e acabamentos, otimizando seu tempo e assegurando escolhas coerentes com o conceito.',
-  },
-  {
-    icon: Ruler,
-    title: 'Marcenaria Exclusiva',
-    description:
-      'Marcenaria sob medida com soluções inteligentes, acabamento refinado e total integração ao projeto.',
-  },
-  {
-    icon: Building2,
-    title: 'Expertise Comprovada',
-    description:
-      'Equipe de arquitetos experientes com portfólio sólido, assegurando excelência técnica e atenção aos detalhes.',
-  },
-  {
-    icon: Shield,
-    title: 'Transparência Financeira',
-    description:
-      'Orçamentos claros e estudos de viabilidade desde o início, proporcionando previsibilidade e controle financeiro.',
-  },
-] as const;
+import { SERVICES } from './data';
 
 const ANIMATION_CONFIG = {
   viewport: {
@@ -96,7 +42,7 @@ export function Services() {
           className="mb-16 max-w-2xl"
         >
           <div className="mb-6">
-            <span className="text-primary text-sm tracking-widest uppercase">
+            <span className="text-primary text-sm tracking-widest uppercase font-bold">
               Nossos Serviços
             </span>
           </div>

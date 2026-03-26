@@ -1,51 +1,11 @@
 'use client';
 
 import Image from 'next/image';
-import {
-  Building2,
-  Calendar,
-  Heart,
-  Users,
-  type LucideIcon,
-} from 'lucide-react';
+import { type LucideIcon } from 'lucide-react';
 import { motion, useInView, type Variants } from 'motion/react';
 import { useRef } from 'react';
 
-interface Stat {
-  icon: LucideIcon;
-  value: string;
-  label: string;
-}
-
-const STATS: Stat[] = [
-  {
-    icon: Building2,
-    value: '300+',
-    label: 'Projetos',
-  },
-  {
-    icon: Calendar,
-    value: '15+',
-    label: 'Anos',
-  },
-  {
-    icon: Users,
-    value: '200+',
-    label: 'Clientes Satisfeitos',
-  },
-  {
-    icon: Heart,
-    value: '100%',
-    label: 'Dedicação',
-  },
-] as const;
-
-const ABOUT_IMAGE = {
-  src: '/images/home/about.jpg',
-  alt: 'Luxury Interior Design',
-  width: 1536,
-  height: 1024,
-} as const;
+import { ABOUT_STATS, ABOUT_IMAGE } from './data';
 
 const ANIMATION_CONFIG = {
   viewport: {
@@ -131,7 +91,7 @@ export function About() {
             className="order-1 lg:order-2"
           >
             <div className="mb-6">
-              <span className="text-primary text-sm tracking-widest uppercase">
+              <span className="text-primary text-sm tracking-widest uppercase font-bold">
                 Sobre Nós
               </span>
             </div>
@@ -166,7 +126,7 @@ export function About() {
             </div>
 
             <div className="border-border mt-12 grid grid-cols-2 gap-6 border-t pt-8 sm:grid-cols-4 sm:gap-8">
-              {STATS.map((stat, index) => {
+              {ABOUT_STATS.map((stat, index) => {
                 const Icon = stat.icon;
                 return (
                   <motion.div

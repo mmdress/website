@@ -23,7 +23,7 @@ export function History() {
 
           <div className="order-1 lg:order-2">
             <div className="mb-6">
-              <span className="text-primary text-sm tracking-widest uppercase">
+              <span className="text-primary text-sm tracking-widest uppercase font-bold">
                 {HISTORY_CONTENT.label}
               </span>
             </div>

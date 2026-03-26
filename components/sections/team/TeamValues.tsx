@@ -6,7 +6,7 @@ export function TeamValues() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-4xl">
           <div className="mb-16 text-center">
-            <span className="text-primary mb-6 block text-sm font-semibold tracking-widest uppercase">
+            <span className="text-primary mb-6 block text-sm tracking-widest uppercase font-bold">
               Nossos Valores
             </span>
             <h2 className="text-foreground mb-6 text-3xl tracking-tight sm:text-4xl lg:text-5xl">

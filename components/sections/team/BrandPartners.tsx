@@ -1,5 +1,13 @@
 import Image from 'next/image';
 
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from '@/components/ui';
+
 import { BRAND_PARTNERS } from './data';
 
 export function BrandPartners() {
@@ -20,24 +28,39 @@ export function BrandPartners() {
         </div>
 
         <div className="mx-auto max-w-6xl">
-          <div className="grid grid-cols-2 gap-8 md:grid-cols-3 lg:grid-cols-6">
-            {BRAND_PARTNERS.map((partner, index) => (
-              <div
-                key={index}
-                className="bg-muted/30 border-border hover:border-accent group flex aspect-square items-center justify-center border p-6 transition-all duration-300"
-              >
-                <div className="relative flex h-full w-full items-center justify-center">
-                  <Image
-                    src={partner.logo}
-                    alt={partner.name}
-                    width={200}
-                    height={200}
-                    className="h-full w-full object-contain opacity-60 grayscale transition-opacity duration-300 group-hover:opacity-100 group-hover:grayscale-0"
-                  />
-                </div>
-              </div>
-            ))}
-          </div>
+          <Carousel
+            opts={{
+              align: 'start',
+              loop: true,
+            }}
+            className="w-full"
+          >
+            <CarouselContent className="-ml-4">
+              {BRAND_PARTNERS.map((partner) => (
+                <CarouselItem
+                  key={partner.name}
+                  className="pl-4 basis-1/2 md:basis-1/3 lg:basis-1/5"
+                >
+                  <div className="bg-muted/30 border-border hover:border-accent group flex aspect-square items-center justify-center border p-6 transition-all duration-300">
+                    <div className="relative flex h-full w-full items-center justify-center">
+                      <Image
+                        src={partner.logo}
+                        alt={partner.name}
+                        width={200}
+                        height={200}
+                        className="h-full w-full object-contain opacity-60 grayscale transition-opacity duration-300 group-hover:opacity-100 group-hover:grayscale-0"
+                      />
+                    </div>
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+
+            <div className="mt-8 flex justify-end gap-2">
+              <CarouselPrevious className="static translate-y-0" />
+              <CarouselNext className="static translate-y-0" />
+            </div>
+          </Carousel>
         </div>
 
         <div className="mt-12 text-center">

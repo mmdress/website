@@ -1,31 +1,4 @@
-import { Eye, Target, Award, type LucideIcon } from 'lucide-react';
-
-interface MissionVisionItem {
-  icon: LucideIcon;
-  title: string;
-  description: string;
-}
-
-const MISSION_VISION_ITEMS: MissionVisionItem[] = [
-  {
-    icon: Eye,
-    title: 'Missão',
-    description:
-      'Criar ambientes que vão além da estética, refletindo a essência, a história e o estilo de vida de cada cliente. Projetamos com sensibilidade, inteligência e excelência técnica, unindo design autoral, materiais de alta qualidade e processos transparentes para transformar sonhos em espaços funcionais, sofisticados e cheios de significado.',
-  },
-  {
-    icon: Target,
-    title: 'Visão',
-    description:
-      'Ser referência nacional em arquitetura e design de interiores, reconhecida pela capacidade de transformar espaços em experiências memoráveis, que inspiram, acolhem e valorizam a vida das pessoas — com criatividade, sustentabilidade e impacto positivo duradouro.',
-  },
-  {
-    icon: Award,
-    title: 'Compromisso',
-    description:
-      'Entregar projetos conduzidos com responsabilidade, ética e atenção absoluta aos detalhes. Unimos estética refinada e funcionalidade inteligente, respeitando prazos, orçamentos e o meio ambiente, mantendo uma comunicação clara e construindo relações baseadas em confiança, cuidado e excelência do início ao fim.',
-  },
-] as const;
+import { MISSION_VISION_ITEMS } from './data';
 
 export function MissionVision() {
   return (

@@ -1,39 +1,4 @@
-import {
-  Building2,
-  Calendar,
-  Users,
-  Heart,
-  type LucideIcon,
-} from 'lucide-react';
-
-interface Stat {
-  icon: LucideIcon;
-  value: string;
-  label: string;
-}
-
-const STATS: Stat[] = [
-  {
-    icon: Building2,
-    value: '300+',
-    label: 'Projetos Concluídos',
-  },
-  {
-    icon: Calendar,
-    value: '15+',
-    label: 'Anos de Experiência',
-  },
-  {
-    icon: Users,
-    value: '200+',
-    label: 'Clientes Satisfeitos',
-  },
-  {
-    icon: Heart,
-    value: '100%',
-    label: 'Dedicação Total',
-  },
-] as const;
+import { STATS } from './data';
 
 export function Stats() {
   return (

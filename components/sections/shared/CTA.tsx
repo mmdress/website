@@ -17,7 +17,7 @@ const CTA_CONTENT = {
 
 export function CTA() {
   return (
-    <section className="bg-white py-20 lg:py-32">
+    <section className="bg-white py-16 lg:py-24">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="bg-accent border-primary relative overflow-hidden border-l-4 p-6 text-center sm:p-8 md:p-12 lg:p-16">
           <div className="mx-auto max-w-2xl">

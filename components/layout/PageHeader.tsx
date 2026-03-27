@@ -26,7 +26,7 @@ export function PageHeader({
   return (
     <header
       className={cn(
-        'relative flex max-h-104 items-center overflow-hidden bg-zinc-800 py-20 text-white',
+        'relative flex max-h-104 items-center overflow-hidden bg-zinc-800 py-16 text-white',
         className,
       )}
     >

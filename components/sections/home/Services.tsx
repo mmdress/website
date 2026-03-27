@@ -32,7 +32,7 @@ export function Services() {
   const isInView = useInView(ref, ANIMATION_CONFIG.viewport);
 
   return (
-    <section id="services" className="bg-accent/70 py-20 lg:py-32" ref={ref}>
+    <section id="services" className="bg-accent/70 py-16 lg:py-24" ref={ref}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           variants={fadeInUp}

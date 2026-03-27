@@ -4,7 +4,7 @@ import { Building2, Hammer, Wrench } from 'lucide-react';
 
 export function IntegratedSolution() {
   return (
-    <section className="bg-linear-to-b from-white to-zinc-50 py-20 lg:py-32">
+    <section className="bg-linear-to-b from-white to-zinc-50 py-16 lg:py-24">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mx-auto mb-16 max-w-4xl text-center">
           <div className="mb-6 flex items-center justify-center gap-3">

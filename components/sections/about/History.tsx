@@ -4,7 +4,7 @@ import { HISTORY_CONTENT, HISTORY_IMAGE } from './data';
 
 export function History() {
   return (
-    <section className="bg-white py-20 lg:py-32">
+    <section className="bg-white py-16 lg:py-24">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
           <div className="relative order-2 lg:order-1">

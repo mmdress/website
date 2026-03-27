@@ -66,7 +66,7 @@ export function Portfolio() {
   }, [activeCategory]);
 
   return (
-    <section id="portfolio" className="bg-white py-20 lg:py-32" ref={ref}>
+    <section id="portfolio" className="bg-white py-16 lg:py-24" ref={ref}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           variants={fadeInUp}

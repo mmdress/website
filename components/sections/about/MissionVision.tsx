@@ -2,7 +2,7 @@ import { MISSION_VISION_ITEMS } from './data';
 
 export function MissionVision() {
   return (
-    <section className="bg-white py-20 lg:py-32">
+    <section className="bg-white py-16 lg:py-24">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid gap-12 lg:grid-cols-3">
           {MISSION_VISION_ITEMS.map((item) => {

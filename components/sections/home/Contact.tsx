@@ -7,7 +7,7 @@ export function Contact() {
   return (
     <section
       id="contact"
-      className="bg-foreground/98 py-20 text-white lg:py-32"
+      className="bg-foreground/98 py-16 text-white lg:py-24"
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid gap-16 lg:grid-cols-2 lg:gap-20">

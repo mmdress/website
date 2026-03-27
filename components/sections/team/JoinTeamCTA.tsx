@@ -1,4 +1,18 @@
 export function JoinTeamCTA() {
+  const mailToHref =
+    'mailto:contato@mmdress.arq.br' +
+    '?subject=' +
+    encodeURIComponent('Oportunidade de Carreira') +
+    '&body=' +
+    encodeURIComponent(
+      'Olá, segue meu currículo/portfólio para avaliação.\n\n' +
+        'Nome:\n' +
+        'Telefone:\n' +
+        'LinkedIn/Portfólio:\n' +
+        'Vaga de interesse:\n\n' +
+        'Obrigado(a)!',
+    );
+
   return (
     <section className="bg-white py-20 lg:py-32">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -12,7 +26,7 @@ export function JoinTeamCTA() {
               design. Envie seu portfólio e currículo.
             </p>
             <a
-              href="mailto:contato@mmdress.arq.br?subject=Oportunidade de Carreira"
+              href={mailToHref}
               className="bg-primary hover:bg-primary/90 inline-block rounded-md px-10 py-4 font-semibold tracking-wide text-white uppercase transition-all duration-300"
             >
               Enviar Currículo

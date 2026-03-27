@@ -3,6 +3,7 @@
 import { Controller, useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { MessageCircle } from 'lucide-react';
+import { toast } from 'sonner';
 
 import {
   Button,
@@ -26,6 +27,7 @@ import {
   SUBJECT_OPTIONS,
 } from '@/utils/schemas';
 import { CONTACT_DATA } from '@/utils/constants';
+import { formatBrazilPhoneMask } from '@/utils/phone';
 
 interface ContactFormProps {
   theme?: 'light' | 'dark';
@@ -37,6 +39,7 @@ export function ContactForm({ theme = 'dark' }: ContactFormProps) {
     handleSubmit,
     formState: { errors, isSubmitting },
     control,
+    reset,
   } = useForm<ContactFormData>({
     resolver: zodResolver(contactFormSchema),
     defaultValues: {
@@ -48,12 +51,36 @@ export function ContactForm({ theme = 'dark' }: ContactFormProps) {
     },
   });
 
+  const subjectMapper = (subject: string) => {
+    return SUBJECT_OPTIONS.find((option) => option.value === subject)?.label;
+  };
+
   const onSubmit = async (data: ContactFormData) => {
     try {
-      // TODO: Implement form submission logic (API call, etc.)
-      console.log('Form data:', data);
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ ...data, subject: subjectMapper(data.subject) }),
+      });
+
+      if (!response.ok) {
+        let serverMessage = '';
+        try {
+          const payload = (await response.json()) as { message?: string };
+          serverMessage = payload?.message ? ` (${payload.message})` : '';
+        } catch {
+          // ignore
+        }
+
+        throw new Error(`Falha ao enviar mensagem${serverMessage}`);
+      }
+
+      toast.success('Mensagem enviada com sucesso! Em breve entraremos em contato.');
+      reset();
     } catch (error) {
-      console.error('Error submitting form:', error);
+      const message =
+        error instanceof Error ? error.message : 'Erro inesperado ao enviar, tente novamente mais tarde.';
+      toast.error(message);
     }
   };
 
@@ -119,13 +146,28 @@ export function ContactForm({ theme = 'dark' }: ContactFormProps) {
           </FormField>
 
           <FormField label="Telefone" id="phone" error={errors.phone}>
-            <Input
-              id="phone"
-              type="tel"
-              {...register('phone')}
-              className={cn(errors.phone && 'border-destructive')}
-              placeholder="(11) 99999-9999"
-              aria-invalid={!!errors.phone}
+            <Controller
+              control={control}
+              name="phone"
+              render={({ field }) => (
+                <Input
+                  id="phone"
+                  type="tel"
+                  inputMode="numeric"
+                  autoComplete="tel"
+                  maxLength={15}
+                  value={field.value}
+                  onBlur={field.onBlur}
+                  onChange={(e) =>
+                    field.onChange(formatBrazilPhoneMask(e.target.value))
+                  }
+                  name={field.name}
+                  ref={field.ref}
+                  className={cn(errors.phone && 'border-destructive')}
+                  placeholder="(11) 99999-9999"
+                  aria-invalid={!!errors.phone}
+                />
+              )}
             />
           </FormField>
 

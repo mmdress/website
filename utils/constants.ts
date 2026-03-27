@@ -2,7 +2,7 @@ import { Facebook, Instagram } from 'lucide-react';
 import { ROUTES } from './routes';
 
 export const CONTACT_DATA = {
-  email: 'contato@mmdress.com.br',
+  email: 'contato@mmdress.arq.br',
   whatsapp: {
     url: 'https://wa.me/5511943637873',
     phone: '(11) 94363-7873',

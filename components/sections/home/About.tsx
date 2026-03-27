@@ -75,7 +75,7 @@ export function About() {
               initial="hidden"
               animate={isInView ? 'visible' : 'hidden'}
               transition={ANIMATION_CONFIG.transitions.scaleIn}
-              className="border-primary absolute -right-6 -bottom-6 h-32 w-32 rounded-2xl border-2"
+              className="border-primary absolute -right-6 -bottom-6 hidden h-32 w-32 rounded-2xl border-2 sm:block"
             />
           </motion.div>
 

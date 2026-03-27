@@ -18,7 +18,7 @@ export function History() {
                 priority
               />
             </div>
-            <div className="border-primary absolute -right-6 -bottom-6 h-32 w-32 rounded-2xl border-2" />
+            <div className="border-primary absolute -right-6 -bottom-6 hidden h-32 w-32 rounded-2xl border-2 sm:block" />
           </div>
 
           <div className="order-1 lg:order-2">

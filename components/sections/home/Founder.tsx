@@ -20,7 +20,7 @@ export function Founder() {
                   className="h-full w-full object-cover"
                 />
               </div>
-              <div className="border-primary absolute -right-6 -bottom-6 h-32 w-32 rounded-2xl border-2" />
+              <div className="border-primary absolute -right-6 -bottom-6 hidden h-32 w-32 rounded-2xl border-2 sm:block" />
             </div>
           </div>
 

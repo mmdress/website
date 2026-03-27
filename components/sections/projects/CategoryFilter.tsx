@@ -17,10 +17,9 @@ export function CategoryFilter({
       {categories.map((category) => (
         <Button
           key={category}
-          onClick={() => onCategoryChange(category)}
-          variant={activeCategory === category ? 'default' : 'outline'}
-          size="default"
           className="cursor-pointer tracking-wide uppercase"
+          variant={activeCategory === category ? 'default' : 'outline'}
+          onClick={() => onCategoryChange(category)}
         >
           {PROJECT_CATEGORY_LABELS[category]}
         </Button>

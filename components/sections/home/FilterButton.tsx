@@ -20,7 +20,7 @@ export function FilterButton({
       onClick={onClick}
       whileHover={{ scale: 1.05 }}
       whileTap={{ scale: 0.95 }}
-      className={`cursor-pointer rounded-full px-6 py-2 text-sm tracking-wide uppercase transition-all duration-300 ${
+      className={`cursor-pointer rounded-full md:px-6 md:py-2 px-4 py-1.5 text-sm tracking-wide uppercase transition-all duration-300 ${
         isActive
           ? 'bg-primary font-semibold text-white'
           : 'border-border text-foreground hover:border-primary border bg-white font-medium'

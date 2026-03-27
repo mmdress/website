@@ -83,7 +83,7 @@ export function Differentials() {
                       whileHover="hover"
                       className="bg-muted text-foreground group-hover:bg-accent group-hover:text-primary flex h-16 w-16 items-center justify-center rounded-2xl transition-all duration-300"
                     >
-                      <Icon className="h-8 w-8" />
+                      <Icon className="h-8 w-8 text-primary" />
                     </motion.div>
                   </div>
 

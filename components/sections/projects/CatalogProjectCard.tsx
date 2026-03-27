@@ -7,15 +7,13 @@ import type { CatalogProject } from './types';
 
 interface CatalogProjectCardProps {
   project: CatalogProject;
-  onClick: () => void;
 }
 
 export function CatalogProjectCard({
   project,
-  onClick,
 }: CatalogProjectCardProps) {
   return (
-    <div className="group cursor-pointer" onClick={onClick}>
+    <div className="group cursor-pointer">
       <div className="bg-muted relative mb-6 aspect-4/5 overflow-hidden rounded-lg">
         <Image
           src={project.image}

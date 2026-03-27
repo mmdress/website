@@ -38,7 +38,7 @@ export function ServicesGrid({ onServiceClick }: ServicesGridProps) {
             </span>
             <div className="h-px w-12 bg-primary" />
           </div>
-          <h2 className="mb-6 text-4xl tracking-tight text-foreground sm:text-5xl lg:text-6xl">
+          <h2 className="mb-6 text-3xl tracking-tight text-foreground sm:text-4xl lg:text-6xl">
             Serviços Completos
           </h2>
           <p className="text-xl leading-relaxed text-muted-foreground">

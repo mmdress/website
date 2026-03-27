@@ -19,7 +19,7 @@ export function CTA() {
   return (
     <section className="bg-white py-20 lg:py-32">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="bg-accent border-primary relative overflow-hidden border-l-4 p-12 text-center lg:p-16">
+        <div className="bg-accent border-primary relative overflow-hidden border-l-4 p-6 text-center sm:p-8 md:p-12 lg:p-16">
           <div className="mx-auto max-w-2xl">
             <div className="mb-6 flex items-center justify-center gap-3">
               <div className="bg-primary h-px w-12" />
@@ -29,7 +29,7 @@ export function CTA() {
               <div className="bg-primary h-px w-12" />
             </div>
 
-            <h2 className="text-foreground mb-6 text-4xl tracking-tight sm:text-5xl lg:text-6xl">
+            <h2 className="text-foreground mb-6 text-3xl tracking-tight sm:text-4xl lg:text-6xl">
               {CTA_CONTENT.title.line1}
               <br />
               {CTA_CONTENT.title.line2}

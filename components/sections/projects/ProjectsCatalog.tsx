@@ -40,10 +40,6 @@ export function ProjectsCatalog() {
       ? projectsData
       : projectsData.filter((project) => project.category === activeCategory);
 
-  const handleProjectClick = (projectId: number) => {
-    // TODO: Implement project detail modal or navigation
-    console.log('Project clicked:', projectId);
-  };
 
   return (
     <section className="bg-white py-20 lg:py-32">
@@ -60,7 +56,7 @@ export function ProjectsCatalog() {
             <CatalogProjectCard
               key={project.id}
               project={project}
-              onClick={() => handleProjectClick(project.id)}
+
             />
           ))}
         </div>

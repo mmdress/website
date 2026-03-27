@@ -115,7 +115,7 @@ export function Hero() {
                     </Button>
                   </div>
 
-                  <div className="flex flex-wrap gap-2 border-t pt-8 sm:gap-4 md:gap-8">
+                  <div className="flex flex-wrap gap-2 border-t pt-8 sm:gap-4 md:gap-8 [@media(max-height:899px)]:hidden">
                     {HERO_STATISTICS.map((stat, index) => (
                       <div key={index} className="min-w-24 flex-1">
                         <p className="text-primary text-2xl font-bold drop-shadow-lg md:text-3xl">

@@ -2,6 +2,7 @@ import Image from 'next/image';
 
 import { InfoCardItem } from './InfoCardItem';
 import { INFO_CARDS, OFFICE_IMAGE } from './data';
+import { CONTACT_DATA } from '@/utils/constants';
 
 export function OfficeSection() {
   return (
@@ -38,7 +39,7 @@ export function OfficeSection() {
                     MMDress Arquitetura e Interiores
                   </h3>
                   <p className="text-white/90">
-                    Av. Nazaré, 1729 - Ipiranga, São Paulo - SP
+                    {CONTACT_DATA.address.street}, {CONTACT_DATA.address.number} - {CONTACT_DATA.address.neighborhood}, {CONTACT_DATA.address.city} - {CONTACT_DATA.address.state} - {CONTACT_DATA.address.zipCode}
                   </p>
                 </div>
               </div>

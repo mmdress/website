@@ -1,8 +1,10 @@
+import { CONTACT_DATA } from '@/utils/constants';
+
 export function JoinTeamCTA() {
   const mailToHref =
-    'mailto:contato@mmdress.arq.br' +
+    `mailto:${CONTACT_DATA.email}` +
     '?subject=' +
-    encodeURIComponent('Oportunidade de Carreira') +
+    encodeURIComponent('Interesse em vaga de emprego') +
     '&body=' +
     encodeURIComponent(
       'Olá, segue meu currículo/portfólio para avaliação.\n\n' +

@@ -50,6 +50,8 @@ export function Contact() {
               <ContactInfoItem icon={Phone} label="Telefone / WhatsApp">
                 <a
                   href={CONTACT_DATA.whatsapp.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="hover:text-primary text-white/90 transition-colors"
                 >
                   {CONTACT_DATA.whatsapp.phone}

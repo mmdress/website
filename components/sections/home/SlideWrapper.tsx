@@ -25,6 +25,8 @@ export function SlideWrapper({
         height={1024}
         className="h-full w-full object-cover"
         priority={priority}
+        fetchPriority={priority ? 'high' : undefined}
+        sizes="100vw"
       />
       <div className={`absolute inset-0 ${overlayOpacity}`} />
       {children}

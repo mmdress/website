@@ -99,7 +99,7 @@ export function Footer() {
               <li>
                 <a
                   href={CONTACT_DATA.whatsapp.url}
-                  className="hover:text-primary block transition-colors"
+                  className="underline underline-offset-4 hover:text-primary block transition-colors"
                 >
                   {CONTACT_DATA.whatsapp.phone}
                 </a>

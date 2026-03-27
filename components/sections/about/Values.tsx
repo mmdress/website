@@ -5,7 +5,7 @@ export function Values() {
     <section className="bg-accent/70 py-20 lg:py-32">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mx-auto mb-16 max-w-3xl text-center">
-          <span className="text-primary mb-6 block text-sm tracking-widest uppercase">
+          <span className="text-primary mb-6 block text-sm tracking-widest uppercase font-bold">
             {VALUES_HEADER.label}
           </span>
           <h2 className="text-foreground mb-6 text-3xl tracking-tight sm:text-4xl lg:text-5xl">

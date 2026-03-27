@@ -7,3 +7,4 @@ export * from './Select';
 export * from './Label';
 export * from './Card';
 export * from './Badge';
+export * from './Sonner';

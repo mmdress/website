@@ -43,7 +43,7 @@ export function TimelineSection() {
                 <div className="flex items-center gap-3">
                   <CheckCircle2 className="h-5 w-5 shrink-0 text-primary" />
                   <span className="text-sm text-muted-foreground">
-                    Prazo: 10-15 dias
+                    Prazo: 10-15 dias úteis
                   </span>
                 </div>
                 <div className="flex items-center gap-3">

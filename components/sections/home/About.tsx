@@ -67,7 +67,6 @@ export function About() {
                   width={ABOUT_IMAGE.width}
                   height={ABOUT_IMAGE.height}
                   className="h-full w-full object-cover"
-                  priority
                 />
               </motion.div>
             </div>

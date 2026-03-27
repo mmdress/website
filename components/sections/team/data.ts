@@ -109,6 +109,14 @@ export const OTHER_MEMBERS: TeamMember[] = [
       'Suporte Operacional',
     ],
   },
+  {
+    id: 10,
+    name: 'Levi Farias',
+    role: 'Suporte TI',
+    bio: 'Realiza o suporte técnico e de infraestrutura para o time, garantindo a eficiência e a continuidade dos processos',
+    image: '/images/team/levi.jpg',
+    specialties: ['Suporte Técnico', 'Infraestrutura', 'Redes'],
+  }
 ];
 
 export const BRAND_PARTNERS: BrandPartner[] = [
@@ -147,10 +155,6 @@ export const BRAND_PARTNERS: BrandPartner[] = [
   {
     name: 'Grupo MSA - Indústria de Móveis',
     logo: '/images/partners/grupo-msa.jpeg',
-  },
-  {
-    name: 'Home Fatto - Eletrodomésticos',
-    logo: '/images/partners/home-fatto.png',
   },
   {
     name: 'Ilumine Light - Iluminação',

@@ -4,7 +4,7 @@ import { PROCESS_STEPS } from './data';
 
 export function ProcessSteps() {
   return (
-    <section className="bg-zinc-50 py-20 lg:py-32">
+    <section className="bg-zinc-50 py-16 lg:py-24">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mx-auto mb-16 max-w-3xl text-center">
           <div className="mb-6 flex items-center justify-center gap-3">
@@ -14,7 +14,7 @@ export function ProcessSteps() {
             </span>
             <div className="h-px w-12 bg-primary" />
           </div>
-          <h2 className="mb-6 text-4xl tracking-tight text-foreground sm:text-5xl lg:text-6xl">
+          <h2 className="mb-6 text-3xl tracking-tight text-foreground sm:text-4xl lg:text-6xl">
             Uma Experiência Completa
           </h2>
           <p className="text-xl leading-relaxed text-muted-foreground">
@@ -41,7 +41,7 @@ export function ProcessSteps() {
                   >
                     <div className="inline-block">
                       <div className="relative">
-                        <span className="text-[120px] font-bold leading-none text-primary/15 lg:text-[180px]">
+                        <span className="text-[80px] font-bold leading-none text-primary/15 sm:text-[120px] lg:text-[180px]">
                           {step.number}
                         </span>
                       </div>

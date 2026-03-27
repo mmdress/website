@@ -2,7 +2,7 @@ import { BENEFITS } from './data';
 
 export function BenefitsSection() {
   return (
-    <section className="relative overflow-hidden bg-foreground py-20 text-white lg:py-32">
+    <section className="relative overflow-hidden bg-foreground py-16 text-white lg:py-24">
       <div className="absolute inset-0 opacity-5">
         <div className="absolute left-20 top-20 h-96 w-96 rounded-full bg-primary blur-3xl" />
         <div className="absolute bottom-20 right-20 h-96 w-96 rounded-full bg-primary blur-3xl" />

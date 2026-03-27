@@ -2,7 +2,7 @@ import { STATS } from './data';
 
 export function Stats() {
   return (
-    <section className="bg-foreground py-20 lg:py-32">
+    <section className="bg-foreground py-16 lg:py-24">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-2 gap-8 lg:grid-cols-4 lg:gap-12">
           {STATS.map((stat) => {

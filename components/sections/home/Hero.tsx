@@ -14,7 +14,6 @@ import {
   CarouselPrevious,
   type CarouselApi,
 } from '@/components/ui';
-import { ROUTES } from '@/utils/routes';
 
 import { SlideWrapper } from './SlideWrapper';
 import { HERO_SLIDES, HERO_BENEFITS, HERO_STATISTICS } from './data';
@@ -63,7 +62,7 @@ export function Hero() {
           }),
         ]}
       >
-        <CarouselContent className="ml-0 h-[768px] md:h-[1024px]">
+        <CarouselContent className="ml-0 h-[832px] md:h-[1024px]">
           <CarouselItem className="h-full pl-0">
             <SlideWrapper
               src="/images/home/hero-01.jpg"
@@ -108,7 +107,7 @@ export function Hero() {
                       className="bg-primary hover:bg-primary/90 px-8 py-6 text-base md:text-lg"
                     >
                       <Link
-                        href={ROUTES.SERVICES}
+                        href="#contact"
                         className="font-semibold text-primary-foreground"
                       >
                         Solicitar orçamento
@@ -116,7 +115,7 @@ export function Hero() {
                     </Button>
                   </div>
 
-                  <div className="flex flex-wrap gap-2 border-t pt-8 sm:gap-4 md:gap-8">
+                  <div className="flex flex-wrap gap-2 border-t pt-8 sm:gap-4 md:gap-8 [@media(max-height:899px)]:hidden">
                     {HERO_STATISTICS.map((stat, index) => (
                       <div key={index} className="min-w-24 flex-1">
                         <p className="text-primary text-2xl font-bold drop-shadow-lg md:text-3xl">

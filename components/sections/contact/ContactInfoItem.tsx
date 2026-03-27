@@ -10,6 +10,7 @@ export function ContactInfoItem({ info }: ContactInfoItemProps) {
   const contentProps = href
     ? {
       href,
+      target: '_blank',
       className: 'text-foreground hover:text-primary transition-colors',
     }
     : { className: 'text-foreground leading-relaxed' };
@@ -23,7 +24,7 @@ export function ContactInfoItem({ info }: ContactInfoItemProps) {
         <div className="text-muted-foreground mb-2 text-sm tracking-wide uppercase">
           {label}
         </div>
-        <Content {...contentProps}>{content}</Content>
+        <Content target="_blank" {...contentProps}>{content}</Content>
       </div>
     </div>
   );

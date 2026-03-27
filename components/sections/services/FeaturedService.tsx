@@ -17,11 +17,11 @@ export function FeaturedService({
   const service = SERVICES[activeService];
 
   return (
-    <section id="featured-service" className="bg-accent/70 py-20 lg:py-32">
+    <section id="featured-service" className="bg-accent/70 py-16 lg:py-24">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
           <div className="relative">
-            <div className="absolute -left-8 -top-8 -z-10 h-40 w-40 rounded-2xl bg-accent/10" />
+            <div className="absolute -left-8 -top-8 -z-10 hidden h-40 w-40 rounded-2xl bg-accent/10 sm:block" />
             <div className="relative aspect-3/4 overflow-hidden rounded-2xl">
               <Image
                 src={service.image}
@@ -33,7 +33,7 @@ export function FeaturedService({
                 priority={activeService === 0}
               />
             </div>
-            <div className="absolute -bottom-8 -right-8 -z-10 h-40 w-40 rounded-2xl bg-primary/10" />
+            <div className="absolute -bottom-8 -right-8 -z-10 hidden h-40 w-40 rounded-2xl bg-primary/10 sm:block" />
           </div>
 
           <div>
@@ -44,7 +44,7 @@ export function FeaturedService({
               </span>
             </div>
 
-            <h2 className="mb-6 text-4xl tracking-tight text-foreground sm:text-5xl">
+            <h2 className="mb-6 text-3xl tracking-tight text-foreground sm:text-4xl lg:text-5xl">
               {service.title}
             </h2>
 

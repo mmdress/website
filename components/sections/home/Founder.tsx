@@ -6,7 +6,7 @@ import { FOUNDER_CREDENTIALS } from './data';
 
 export function Founder() {
   return (
-    <section id="founder" className="bg-white py-20 lg:py-32">
+    <section id="founder" className="bg-white py-16 lg:py-24">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
           <div className="order-2 lg:order-1">
@@ -20,7 +20,7 @@ export function Founder() {
                   className="h-full w-full object-cover"
                 />
               </div>
-              <div className="border-primary absolute -right-6 -bottom-6 h-32 w-32 rounded-2xl border-2" />
+              <div className="border-primary absolute -right-6 -bottom-6 hidden h-32 w-32 rounded-2xl border-2 sm:block" />
             </div>
           </div>
 

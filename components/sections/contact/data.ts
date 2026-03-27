@@ -5,21 +5,22 @@ import {
   MapPin,
 } from 'lucide-react';
 import type { ContactInfo, InfoCard } from './types';
-import { SOCIAL_LINKS } from '@/utils/constants';
+import { CONTACT_DATA, SOCIAL_LINKS } from '@/utils/constants';
 
 export { SOCIAL_LINKS };
+
 export const CONTACT_INFO: ContactInfo[] = [
   {
     icon: Phone,
     label: 'Telefone / WhatsApp',
-    content: '(11) 94363-7873',
-    href: 'tel:+5511943637873',
+    content: CONTACT_DATA.whatsapp.phone,
+    href: CONTACT_DATA.whatsapp.url,
   },
   {
     icon: Mail,
     label: 'E-mail',
-    content: 'contato@mmdress.arq.br',
-    href: 'mailto:contato@mmdress.arq.br',
+    content: CONTACT_DATA.email,
+    href: `mailto:${CONTACT_DATA.email}`,
   },
   {
     icon: Clock,

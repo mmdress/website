@@ -26,7 +26,7 @@ export function PageHeader({
   return (
     <header
       className={cn(
-        'relative flex max-h-104 items-center overflow-hidden bg-zinc-800 py-20 text-white',
+        'relative flex max-h-104 items-center overflow-hidden bg-zinc-800 py-16 text-white',
         className,
       )}
     >
@@ -54,7 +54,7 @@ export function PageHeader({
             </div>
           )}
 
-          <h1 className="mb-6 text-5xl tracking-tight sm:text-6xl lg:text-7xl">
+          <h1 className="mb-6 text-4xl tracking-tight sm:text-5xl lg:text-7xl">
             {title}
           </h1>
 

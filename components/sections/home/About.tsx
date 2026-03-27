@@ -46,7 +46,7 @@ export function About() {
   const isInView = useInView(ref, ANIMATION_CONFIG.viewport);
 
   return (
-    <section id="about" className="bg-white py-20 lg:py-32" ref={ref}>
+    <section id="about" className="bg-white py-16 lg:py-24" ref={ref}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
           <motion.div
@@ -75,7 +75,7 @@ export function About() {
               initial="hidden"
               animate={isInView ? 'visible' : 'hidden'}
               transition={ANIMATION_CONFIG.transitions.scaleIn}
-              className="border-primary absolute -right-6 -bottom-6 h-32 w-32 rounded-2xl border-2"
+              className="border-primary absolute -right-6 -bottom-6 hidden h-32 w-32 rounded-2xl border-2 sm:block"
             />
           </motion.div>
 

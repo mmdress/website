@@ -14,7 +14,7 @@ export default function Team() {
       <PageHeader
         badge="Nossa Equipe"
         title={
-          <span className="truncate">
+          <span className="truncate text-3xl sm:text-5xl lg:text-7xl">
             Profissionais Apaixonados
             <br />
             <span className="text-primary">por Design</span>

@@ -39,12 +39,12 @@ export const NAV_ITEMS = [
 
 export const SOCIAL_LINKS = [
   {
-    href: 'https://www.instagram.com/mmdress.arquitetura/',
+    href: CONTACT_DATA.instagram.url,
     icon: Instagram,
     label: 'Instagram',
   },
   {
-    href: 'https://www.facebook.com/mmdress.arquitetura',
+    href: CONTACT_DATA.facebook.url,
     icon: Facebook,
     label: 'Facebook',
   },

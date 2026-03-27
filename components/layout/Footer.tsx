@@ -24,7 +24,7 @@ export function Footer() {
           {/* Brand */}
           <div className="lg:col-span-2">
             <div className="mb-6">
-              <div className="text-foreground mb-1 text-2xl tracking-wider">
+              <div className="text-primary mb-1 text-2xl tracking-wider">
                 MMDRESS
               </div>
               <div className="text-muted-foreground text-xs tracking-widest uppercase">
@@ -45,9 +45,7 @@ export function Footer() {
                   <a
                     key={social.href}
                     href={social.href}
-                    target={
-                      social.href.startsWith('http') ? '_blank' : undefined
-                    }
+                    target="_blank"
                     rel={
                       social.href.startsWith('http')
                         ? 'noopener noreferrer'
@@ -99,6 +97,7 @@ export function Footer() {
               <li>
                 <a
                   href={CONTACT_DATA.whatsapp.url}
+                  target="_blank"
                   className="underline underline-offset-4 hover:text-primary block transition-colors"
                 >
                   {CONTACT_DATA.whatsapp.phone}

@@ -118,7 +118,7 @@ export function About() {
 
               <p>
                 Bem-vindo a um universo onde o design encontra propósito, e onde
-                cada ambiente conta uma história — a sua! Aqui, arquitetura é
+                cada ambiente conta uma história, a sua! Aqui, arquitetura é
                 mais do que forma e função: é experiência, intenção e
                 identidade.
               </p>

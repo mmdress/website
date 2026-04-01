@@ -48,7 +48,7 @@ export const MISSION_VISION_ITEMS: MissionVisionItem[] = [
     icon: Target,
     title: 'Visão',
     description:
-      'Ser referência nacional em arquitetura e design de interiores, reconhecida pela capacidade de transformar espaços em experiências memoráveis, que inspiram, acolhem e valorizam a vida das pessoas — com criatividade, sustentabilidade e impacto positivo duradouro.',
+      'Ser referência nacional em arquitetura e design de interiores, reconhecida pela capacidade de transformar espaços em experiências memoráveis, que inspiram, acolhem e valorizam a vida das pessoas, com criatividade, sustentabilidade e impacto positivo duradouro.',
   },
   {
     icon: Award,

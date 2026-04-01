@@ -8,10 +8,10 @@ import { CTA } from '@/components/sections/shared';
 export const metadata: Metadata = {
   title: 'Nossos Serviços',
   description:
-    'Do projeto de interiores em 3D ao executivo civil, obra, marcenaria, ambientação e paisagismo — acompanhamento integrado em cada etapa.',
+    'Do projeto de interiores em 3D ao executivo civil, obra, marcenaria, ambientação e paisagismo, acompanhamento integrado em cada etapa.',
   openGraph: {
     description:
-      'Do projeto de interiores em 3D ao executivo civil, obra, marcenaria, ambientação e paisagismo — acompanhamento integrado em cada etapa.',
+      'Do projeto de interiores em 3D ao executivo civil, obra, marcenaria, ambientação e paisagismo, acompanhamento integrado em cada etapa.',
     images: [{ url: '/images/services/header.jpg', alt: 'Nossos Serviços' }],
   },
 };
@@ -28,7 +28,7 @@ export default function Services() {
             <span className="text-primary">Cada Detalhe</span>
           </span>
         }
-        description="Do projeto de interiores em 3D ao executivo civil, obra, marcenaria, ambientação e paisagismo — acompanhamento integrado em cada etapa."
+        description="Do projeto de interiores em 3D ao executivo civil, obra, marcenaria, ambientação e paisagismo, acompanhamento integrado em cada etapa."
         backgroundImage={{
           src: '/images/services/header.jpg',
           alt: 'Nossos Serviços',

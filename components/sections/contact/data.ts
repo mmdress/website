@@ -45,6 +45,6 @@ export const INFO_CARDS: InfoCard[] = [
 ];
 
 export const OFFICE_IMAGE = {
-  src: 'https://images.unsplash.com/photo-1723271198638-8035292089a9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBhcmNoaXRlY3R1cmUlMjBvZmZpY2UlMjBidWlsZGluZyUyMGZhY2FkZXxlbnwxfHx8fDE3NjE0MjQzMjV8MA&ixlib=rb-4.1.0&q=80&w=1080',
+  src: '/images/contact/office.jpeg',
   alt: 'Fachada MMDress Arquitetura',
 };

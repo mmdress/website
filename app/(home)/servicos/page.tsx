@@ -1,18 +1,22 @@
-'use client';
-
-import { useState } from 'react';
+import type { Metadata } from 'next';
 
 import { PageHeader } from '@/components/layout';
-import {
-  ServicesGrid,
-  FeaturedService,
-  DifferentialsSection,
-} from '@/components/sections/services';
+import { ServiceWrapper } from '@/components/sections/services/ServiceWrapper';
+import { DifferentialsSection } from '@/components/sections/services/DifferentialsSection';
 import { CTA } from '@/components/sections/shared';
 
-export default function Services() {
-  const [activeService, setActiveService] = useState(0);
+export const metadata: Metadata = {
+  title: 'Nossos Serviços',
+  description:
+    'Do projeto de interiores em 3D ao executivo civil, obra, marcenaria, ambientação e paisagismo — acompanhamento integrado em cada etapa.',
+  openGraph: {
+    description:
+      'Do projeto de interiores em 3D ao executivo civil, obra, marcenaria, ambientação e paisagismo — acompanhamento integrado em cada etapa.',
+    images: [{ url: '/images/services/header.jpg', alt: 'Nossos Serviços' }],
+  },
+};
 
+export default function Services() {
   return (
     <div className="pt-20 lg:pt-24">
       <PageHeader
@@ -30,11 +34,7 @@ export default function Services() {
           alt: 'Nossos Serviços',
         }}
       />
-      <ServicesGrid onServiceClick={setActiveService} />
-      <FeaturedService
-        activeService={activeService}
-        onServiceChange={setActiveService}
-      />
+      <ServiceWrapper />
       <DifferentialsSection />
       <CTA />
     </div>

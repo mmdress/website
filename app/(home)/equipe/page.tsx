@@ -1,3 +1,5 @@
+import type { Metadata } from 'next';
+
 import { PageHeader } from '@/components/layout';
 import { CTA } from '@/components/sections/shared';
 import {
@@ -7,6 +9,17 @@ import {
   TeamValues,
   JoinTeamCTA,
 } from '@/components/sections/team';
+
+export const metadata: Metadata = {
+  title: 'Nossa Equipe',
+  description:
+    'Conheça os talentos que transformam sonhos em realidade através de criatividade, técnica e dedicação integral a cada projeto.',
+  openGraph: {
+    description:
+      'Conheça os talentos que transformam sonhos em realidade através de criatividade, técnica e dedicação integral a cada projeto.',
+    images: [{ url: '/images/team/header.jpg', alt: 'Nossa Equipe' }],
+  },
+};
 
 export default function Team() {
   return (

@@ -1,3 +1,5 @@
+import type { Metadata } from 'next';
+
 import { PageHeader } from '@/components/layout';
 import {
   ProcessSteps,
@@ -6,6 +8,19 @@ import {
   BenefitsSection,
 } from '@/components/sections/how-it-works';
 import { CTA } from '@/components/sections/shared';
+
+export const metadata: Metadata = {
+  title: 'Como Funciona',
+  description:
+    'Uma jornada completa de encantamento, onde cada etapa é pensada para transformar sua visão em um espaço único, do primeiro contato à entrega final.',
+  openGraph: {
+    description:
+      'Uma jornada completa de encantamento, onde cada etapa é pensada para transformar sua visão em um espaço único, do primeiro contato à entrega final.',
+    images: [
+      { url: '/images/how-it-works/header.jpg', alt: 'Como Funciona' },
+    ],
+  },
+};
 
 export default function HowItWorks() {
   return (

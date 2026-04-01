@@ -15,8 +15,14 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'MMDress',
-  description: 'MMDress - Arquitetura e Interiores',
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_SITE_URL ?? 'https://www.mmdress.arq.br',
+  ),
+  applicationName: 'MMDress',
+  title: {
+    default: 'MMDress',
+    template: 'MMDress | %s',
+  },
 };
 
 export default function RootLayout({

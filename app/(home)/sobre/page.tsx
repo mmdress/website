@@ -1,3 +1,5 @@
+import type { Metadata } from 'next';
+
 import { PageHeader } from '@/components/layout';
 import { CTA } from '@/components/sections/shared';
 import {
@@ -6,6 +8,17 @@ import {
   MissionVision,
   Stats,
 } from '@/components/sections/about';
+
+export const metadata: Metadata = {
+  title: 'Sobre a MMDress',
+  description:
+    'Somos uma empresa de arquitetura e design de interiores dedicada a criar ambientes que inspiram, acolhem e refletem a essência de cada cliente.',
+  openGraph: {
+    description:
+      'Somos uma empresa de arquitetura e design de interiores dedicada a criar ambientes que inspiram, acolhem e refletem a essência de cada cliente.',
+    images: [{ url: '/images/about/header.jpg', alt: 'Sobre a MMDress' }],
+  },
+};
 
 export default function About() {
   return (

@@ -1,5 +1,18 @@
+import type { Metadata } from 'next';
+
 import { PageHeader } from '@/components/layout';
 import { ContactSection, MapSection, OfficeSection } from '@/components/sections/contact';
+
+export const metadata: Metadata = {
+  title: 'Entre em Contato',
+  description:
+    'Estamos prontos para transformar seus sonhos em realidade. Entre em contato e agende uma conversa sem compromisso.',
+  openGraph: {
+    description:
+      'Estamos prontos para transformar seus sonhos em realidade. Entre em contato e agende uma conversa sem compromisso.',
+    images: [{ url: '/images/contact/header.jpg', alt: 'Entre em Contato' }],
+  },
+};
 
 export default function Contact() {
   return (
@@ -19,7 +32,6 @@ export default function Contact() {
           alt: 'Entre em Contato',
         }}
       />
-
       <ContactSection />
       <MapSection />
       <OfficeSection />

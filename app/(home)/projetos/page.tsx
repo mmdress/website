@@ -1,6 +1,19 @@
+import type { Metadata } from 'next';
+
 import { PageHeader } from '@/components/layout';
 import { ProjectsCatalog, ProjectsStats } from '@/components/sections/projects';
 import { CTA } from '@/components/sections/shared';
+
+export const metadata: Metadata = {
+  title: 'Portfolio',
+  description:
+    'Conheça uma seleção dos nossos trabalhos mais recentes que exemplificam nossa abordagem única ao design e à arquitetura.',
+  openGraph: {
+    description:
+      'Conheça uma seleção dos nossos trabalhos mais recentes que exemplificam nossa abordagem única ao design e à arquitetura.',
+    images: [{ url: '/images/projects/header.jpg', alt: 'Projetos' }],
+  },
+};
 
 export default function Projects() {
   return (

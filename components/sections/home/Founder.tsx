@@ -55,7 +55,7 @@ export function Founder() {
                 Começa com uma inquietação genuína: entender pessoas. Entender
                 seus sonhos, suas rotinas, seus silêncios e desejos mais
                 profundos. Desde cedo, ela percebeu que arquitetura não é apenas
-                técnica — é sensibilidade, escuta e responsabilidade.
+                técnica, é sensibilidade, escuta e responsabilidade.
               </p>
 
               <p>
@@ -70,7 +70,7 @@ export function Founder() {
                 estética refinada, transparência e entregas feitas com
                 responsabilidade. Marcia acompanha cada projeto de perto,
                 conduzindo decisões com firmeza e cuidado. Seus clientes não se
-                sentem apenas atendidos — sentem-se amparados.
+                sentem apenas atendidos, sentem-se amparados.
               </p>
             </div>
 

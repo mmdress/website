@@ -28,12 +28,15 @@ import {
 } from '@/utils/schemas';
 import { CONTACT_DATA } from '@/utils/constants';
 import { formatBrazilPhoneMask } from '@/utils/phone';
+import { useUtmParams } from '@/hooks/useUtmParams';
 
 interface ContactFormProps {
   theme?: 'light' | 'dark';
 }
 
 export function ContactForm({ theme = 'dark' }: ContactFormProps) {
+  const utmParams = useUtmParams();
+
   const {
     register,
     handleSubmit,
@@ -60,7 +63,7 @@ export function ContactForm({ theme = 'dark' }: ContactFormProps) {
       const response = await fetch('/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ ...data, subject: subjectMapper(data.subject) }),
+        body: JSON.stringify({ ...data, subject: subjectMapper(data.subject), ...utmParams }),
       });
 
       if (!response.ok) {

@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 import { SESClient, SendEmailCommand } from '@aws-sdk/client-ses';
 
-import { contactFormSchema } from '@/utils/schemas';
+import { contactFormPayloadSchema } from '@/utils/schemas';
 
 export const runtime = 'nodejs';
 
@@ -25,7 +25,7 @@ function requiredEnv(name: string) {
 export async function POST(req: Request) {
   try {
     const json = await req.json();
-    const parsed = contactFormSchema.safeParse(json);
+    const parsed = contactFormPayloadSchema.safeParse(json);
 
     if (!parsed.success) {
       return NextResponse.json(
@@ -44,6 +44,23 @@ export async function POST(req: Request) {
       ? `Formulário de Contato (Website) - ${subjectValue}`
       : 'Formulário de Contato (Website)';
 
+    const utmLines: string[] = [];
+    const utmFields = [
+      ['utm_source', 'Fonte (utm_source)'],
+      ['utm_medium', 'Mídia (utm_medium)'],
+      ['utm_campaign', 'Campanha (utm_campaign)'],
+      ['utm_term', 'Termo (utm_term)'],
+      ['utm_content', 'Conteúdo (utm_content)'],
+      ['utm_referrer', 'Referrer (utm_referrer)'],
+      ['gclid', 'Google Click ID (gclid)'],
+      ['fbclid', 'Facebook Click ID (fbclid)'],
+    ] as const;
+
+    for (const [key, label] of utmFields) {
+      const value = data[key];
+      if (value) utmLines.push(`${label}: ${value}`);
+    }
+
     const textBody = [
       'Nova mensagem de formulário de contato (Website)',
       '',
@@ -55,6 +72,9 @@ export async function POST(req: Request) {
       'Mensagem:',
       data.message,
       '',
+      ...(utmLines.length > 0
+        ? ['', '--- Dados de Rastreamento ---', ...utmLines, '']
+        : []),
     ].join('\n');
 
     await ses.send(

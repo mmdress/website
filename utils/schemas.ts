@@ -27,6 +27,22 @@ export const contactFormSchema = z.object({
 
 export type ContactFormData = z.infer<typeof contactFormSchema>;
 
+export const utmParamsSchema = z.object({
+  utm_source: z.string().optional(),
+  utm_medium: z.string().optional(),
+  utm_campaign: z.string().optional(),
+  utm_term: z.string().optional(),
+  utm_content: z.string().optional(),
+  utm_referrer: z.string().optional(),
+  gclid: z.string().optional(),
+  fbclid: z.string().optional(),
+});
+
+export type UtmParamsData = z.infer<typeof utmParamsSchema>;
+
+export const contactFormPayloadSchema = contactFormSchema.extend(utmParamsSchema.shape);
+export type ContactFormPayload = z.infer<typeof contactFormPayloadSchema>;
+
 export const SUBJECT_OPTIONS = [
   { value: 'quote', label: 'Solicitar Orçamento' },
   { value: 'consultation', label: 'Consultoria' },

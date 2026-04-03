@@ -1,9 +1,11 @@
 import type { Metadata } from 'next';
 import { Geist, Geist_Mono } from 'next/font/google';
 import Script from 'next/script';
+import { Suspense } from 'react';
 
 import './globals.css';
 import { ToasterProvider } from '@/components/providers/ToasterProvider';
+import { UtmCapture } from '@/components/UtmCapture';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -58,6 +60,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             </Script>
           </>
         ) : null}
+        <Suspense>
+          <UtmCapture />
+        </Suspense>
         {children}
         <ToasterProvider />
       </body>

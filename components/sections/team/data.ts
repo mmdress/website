@@ -61,32 +61,12 @@ export const OTHER_MEMBERS: TeamMember[] = [
     specialties: ['Projetos de Interiores', 'Suporte ao Cliente'],
   },
   {
-    id: 5,
-    name: 'Lana Kristiny',
-    role: 'Auxiliar de Projetos',
-    bio: 'Auxilia todo o time de projetos, organiza e entrega documentações e acompanha as obras junto à equipe.',
-    image: '/images/team/lana-kristiny.jpg',
-    specialties: [
-      'Apoio a Projetos',
-      'Documentação',
-      'Acompanhamento de Obras',
-    ],
-  },
-  {
     id: 6,
     name: 'Catharina D’Almeida',
     role: 'Auxiliar De Projetos & Projetista',
     bio: 'Executa projetos civis com dedicação, atenção técnica e comprometimento com os prazos.',
     image: '/images/team/catharina-dalmeida.jpg',
     specialties: ['Projetos Civis', 'Detalhamento Técnico'],
-  },
-  {
-    id: 7,
-    name: 'Maria Zahner',
-    role: 'Assistente de Projetos',
-    bio: 'Executa projetos com excelência, apoia o time em todas as demandas, e dá suporte direto à gestão.',
-    image: '/images/team/maria-zahner.jpg',
-    specialties: ['Projetos de Interiores', 'Apoio a Projetos'],
   },
   {
     id: 8,

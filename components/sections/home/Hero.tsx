@@ -67,10 +67,10 @@ export function Hero() {
             <SlideWrapper
               src="/images/home/hero-01.jpg"
               alt="Design de interiores moderno"
-              overlayOpacity="bg-black/40"
+              overlayOpacity="bg-black/20"
               priority={true}
             >
-              <div className="absolute inset-0 z-10 flex flex-col justify-center bg-black/50 px-4">
+              <div className="absolute inset-0 z-10 flex flex-col justify-center bg-black/20 px-4">
                 <div className="max-w-2xl space-y-6 px-8 md:px-12 lg:px-16">
                   <h1 className="text-3xl leading-tight font-bold text-white drop-shadow-lg md:text-4xl lg:text-5xl">
                     Bem-vindo à <span className="text-primary">MMDress</span>
@@ -138,9 +138,9 @@ export function Hero() {
                 src={slide.src}
                 alt={slide.alt}
                 priority={false}
-                overlayOpacity="bg-black/40"
+                overlayOpacity={slide.overlayOpacity || 'bg-black/20'}
               >
-                <div className="absolute inset-0 z-10 flex flex-col justify-center px-4 bg-black/40">
+                <div className={`absolute inset-0 z-10 flex flex-col justify-center px-4 ${slide.overlayOpacity || 'bg-black/20'}`}>
                   <div className="max-w-3xl space-y-6 px-8 md:px-12 lg:px-16">
                     <h1
                       className="[&>span]:text-primary text-3xl leading-tight font-bold text-white drop-shadow-lg md:text-4xl lg:text-5xl"
@@ -195,15 +195,14 @@ export function Hero() {
           <button
             key={index}
             onClick={() => scrollTo(index)}
-            className="group flex h-6 w-6 items-center justify-center rounded-full"
+            className="group flex h-6 w-6 items-center justify-center rounded-full cursor-pointer"
             aria-label={`Go to slide ${index + 1}`}
           >
             <span
-              className={`h-2 rounded-full transition-all duration-300 ${
-                current === index + 1
-                  ? 'bg-primary w-6'
-                  : 'w-2 bg-white/50 group-hover:bg-white/70'
-              }`}
+              className={`h-2 rounded-full transition-all duration-300 ${current === index + 1
+                ? 'bg-primary w-6'
+                : 'w-2 bg-white/50 group-hover:bg-white/70'
+                }`}
             />
           </button>
         ))}

@@ -41,6 +41,7 @@ export interface HeroSlide {
     icon: LucideIcon;
     text: string;
   }[];
+  overlayOpacity?: string;
 }
 
 export const HERO_SLIDES: HeroSlide[] = [
@@ -106,6 +107,7 @@ export const HERO_SLIDES: HeroSlide[] = [
         text: 'Seleção criteriosa para garantir beleza e longevidade',
       },
     ],
+    overlayOpacity: 'bg-black/10',
   },
 ];
 

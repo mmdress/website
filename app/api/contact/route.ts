@@ -1,7 +1,10 @@
+import { randomUUID } from 'crypto';
+
 import { NextResponse } from 'next/server';
 import { SESClient, SendEmailCommand } from '@aws-sdk/client-ses';
 
 import { contactFormPayloadSchema } from '@/utils/schemas';
+import { sendMetaLeadEvent } from '@/utils/meta-capi';
 
 export const runtime = 'nodejs';
 
@@ -20,6 +23,15 @@ function requiredEnv(name: string) {
   const value = process.env[name];
   if (!value) throw new Error(`Missing env var: ${name}`);
   return value;
+}
+
+function getCookie(cookieHeader: string | null, name: string): string | undefined {
+  if (!cookieHeader) return undefined;
+  const match = cookieHeader
+    .split(';')
+    .map((c) => c.trim())
+    .find((c) => c.startsWith(`${name}=`));
+  return match?.slice(name.length + 1);
 }
 
 export async function POST(req: Request) {
@@ -90,6 +102,21 @@ export async function POST(req: Request) {
         },
       }),
     );
+
+    const cookieHeader = req.headers.get('cookie');
+    const forwardedFor = req.headers.get('x-forwarded-for');
+
+    await sendMetaLeadEvent({
+      eventId: data.eventId ?? randomUUID(),
+      email: data.email,
+      phone: data.phone,
+      firstName: data.name.split(' ')[0] ?? data.name,
+      sourceUrl: req.headers.get('referer') ?? process.env.NEXT_PUBLIC_SITE_URL ?? '',
+      clientIp: forwardedFor?.split(',')[0]?.trim(),
+      userAgent: req.headers.get('user-agent') ?? undefined,
+      fbp: getCookie(cookieHeader, '_fbp'),
+      fbc: getCookie(cookieHeader, '_fbc'),
+    });
 
     return NextResponse.json({ ok: true });
   } catch (error) {

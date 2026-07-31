@@ -4,6 +4,7 @@ import Script from 'next/script';
 import { Suspense } from 'react';
 
 import './globals.css';
+import { MetaPixel } from '@/components/ads';
 import { ToasterProvider } from '@/components/providers/ToasterProvider';
 import { UtmCapture } from '@/components/UtmCapture';
 
@@ -60,6 +61,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             </Script>
           </>
         ) : null}
+        <MetaPixel />
         <Suspense>
           <UtmCapture />
         </Suspense>

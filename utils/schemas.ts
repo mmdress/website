@@ -40,7 +40,10 @@ export const utmParamsSchema = z.object({
 
 export type UtmParamsData = z.infer<typeof utmParamsSchema>;
 
-export const contactFormPayloadSchema = contactFormSchema.extend(utmParamsSchema.shape);
+export const contactFormPayloadSchema = contactFormSchema.extend({
+  ...utmParamsSchema.shape,
+  eventId: z.string().optional(),
+});
 export type ContactFormPayload = z.infer<typeof contactFormPayloadSchema>;
 
 export const SUBJECT_OPTIONS = [

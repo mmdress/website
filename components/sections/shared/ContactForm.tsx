@@ -59,11 +59,21 @@ export function ContactForm({ theme = 'dark' }: ContactFormProps) {
   };
 
   const onSubmit = async (data: ContactFormData) => {
+    const eventId =
+      typeof crypto !== 'undefined' && 'randomUUID' in crypto
+        ? crypto.randomUUID()
+        : `${Date.now()}-${Math.random()}`;
+
     try {
       const response = await fetch('/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ ...data, subject: subjectMapper(data.subject), ...utmParams }),
+        body: JSON.stringify({
+          ...data,
+          subject: subjectMapper(data.subject),
+          ...utmParams,
+          eventId,
+        }),
       });
 
       if (!response.ok) {
@@ -77,6 +87,8 @@ export function ContactForm({ theme = 'dark' }: ContactFormProps) {
 
         throw new Error(`Falha ao enviar mensagem${serverMessage}`);
       }
+
+      window.fbq?.('track', 'Lead', {}, { eventID: eventId });
 
       toast.success('Mensagem enviada com sucesso! Em breve entraremos em contato.');
       reset();

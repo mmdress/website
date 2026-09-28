@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 
+import { AdSenseBanner } from '@/components/ads';
 import { PageHeader } from '@/components/layout';
 import { CTA } from '@/components/sections/shared';
 import {
@@ -38,6 +39,7 @@ export default function About() {
         }}
       />
       <History />
+      <AdSenseBanner variant="in-article" />
       <Values />
       <MissionVision />
       <Stats />

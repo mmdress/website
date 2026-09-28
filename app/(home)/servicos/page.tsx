@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 
+import { AdSenseBanner } from '@/components/ads';
 import { PageHeader } from '@/components/layout';
 import { ServiceWrapper } from '@/components/sections/services/ServiceWrapper';
 import { DifferentialsSection } from '@/components/sections/services/DifferentialsSection';
@@ -35,6 +36,7 @@ export default function Services() {
         }}
       />
       <ServiceWrapper />
+      <AdSenseBanner variant="in-article" />
       <DifferentialsSection />
       <CTA />
     </div>

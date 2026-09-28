@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 
+import { AdSenseBanner } from '@/components/ads';
 import { PageHeader } from '@/components/layout';
 import {
   ProcessSteps,
@@ -42,6 +43,7 @@ export default function HowItWorks() {
       />
       <IntegratedSolution />
       <ProcessSteps />
+      <AdSenseBanner variant="in-article" />
       <TimelineSection />
       <BenefitsSection />
       <CTA />

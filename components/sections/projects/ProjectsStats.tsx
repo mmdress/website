@@ -9,7 +9,7 @@ const STATS: Stat[] = [
     label: 'Projetos Entregues',
   },
   {
-    value: '15+',
+    value: '7+',
     label: 'Anos de Mercado',
   },
   {

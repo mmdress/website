@@ -155,7 +155,7 @@ export const ABOUT_STATS: AboutStat[] = [
   },
   {
     icon: GraduationCap,
-    value: '15+',
+    value: '7+',
     label: 'Anos',
   },
   {

@@ -100,7 +100,7 @@ export const STATS: AboutStat[] = [
   },
   {
     icon: Calendar,
-    value: '15+',
+    value: '7+',
     label: 'Anos de Experiência',
   },
   {
